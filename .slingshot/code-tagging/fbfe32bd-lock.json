@@ -1,0 +1,307 @@
+{
+  "src\\hooks\\useJson.js": {
+    "filename": "useJson.js",
+    "path": "src\\hooks\\useJson.js",
+    "version": "1.1",
+    "chunks": {
+      "a97eff": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767699691,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "9f2c65c2",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "a97eff",
+        "hash": "39d53775",
+        "encoded": "import%20%7B%20useEffect,%20useRef,%20useState%20%7D%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "a97eff",
+        "hash": "51deea08",
+        "encoded": "import%20%7B%20fetchJson%20%7D%20from%20%22./dataClient%22;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "a97eff",
+        "hash": "62512d72",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "a97eff",
+        "hash": "41d9b908",
+        "encoded": "*%20useJson%20-%20fetch%20JSON%20with%20caching,%20timeout,%20retries.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "a97eff",
+        "hash": "bb2aaf87",
+        "encoded": "*%20@param%20%7Bstring%7D%20url%20relative%20or%20absolute%20URL",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "a97eff",
+        "hash": "240450f1",
+        "encoded": "*%20@param%20%7B%7BttlMs?:number,%20retries?:number,%20timeoutMs?:number,%20cacheBust?:boolean%7D%7D%20options",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "a97eff",
+        "hash": "0ae79b2f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a97eff",
+        "hash": "4b214579",
+        "encoded": "export%20function%20useJson(url,%20options%20=%20%7B%7D)%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a97eff",
+        "hash": "b5e2149b",
+        "encoded": "const%20%5Bdata,%20setData%5D%20=%20useState(null);",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "a97eff",
+        "hash": "5941d664",
+        "encoded": "const%20%5Berror,%20setError%5D%20=%20useState(null);",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a97eff",
+        "hash": "aee37d87",
+        "encoded": "const%20%5Bloading,%20setLoading%5D%20=%20useState(!!url);",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "a97eff",
+        "hash": "3c2a6b20",
+        "encoded": "const%20optsRef%20=%20useRef(options);",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a97eff",
+        "hash": "16aa3370",
+        "encoded": "optsRef.current%20=%20options;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a97eff",
+        "hash": "371234c1",
+        "encoded": "//%20A%20simple%20reload%20token",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "a97eff",
+        "hash": "f01109d7",
+        "encoded": "const%20%5Btick,%20setTick%5D%20=%20useState(0);",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a97eff",
+        "hash": "4ee0c03d",
+        "encoded": "const%20reload%20=%20()%20=%3E%20setTick((x)%20=%3E%20x%20+%201);",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a97eff",
+        "hash": "f31a8ff4",
+        "encoded": "useEffect(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a97eff",
+        "hash": "ad52769f",
+        "encoded": "if%20(!url)%20%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a97eff",
+        "hash": "6e13cbe0",
+        "encoded": "setData(null);",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a97eff",
+        "hash": "849d7479",
+        "encoded": "setError(new%20Error(%22useJson:%20url%20is%20required%22));",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a97eff",
+        "hash": "b2117e8b",
+        "encoded": "setLoading(false);",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "a97eff",
+        "hash": "a9417649",
+        "encoded": "return;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "a97eff",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "a97eff",
+        "hash": "ebb4a72f",
+        "encoded": "let%20alive%20=%20true;",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "a97eff",
+        "hash": "0d5fcdde",
+        "encoded": "setLoading(true);",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "a97eff",
+        "hash": "9886544c",
+        "encoded": "setError(null);",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "a97eff",
+        "hash": "570e6e0b",
+        "encoded": "//%20Use%20AbortController%20to%20cancel%20on%20unmount",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "a97eff",
+        "hash": "f4d86cdb",
+        "encoded": "const%20ac%20=%20new%20AbortController();",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "a97eff",
+        "hash": "e3f82d9e",
+        "encoded": "fetchJson(url,%20%7B%20signal:%20ac.signal,%20...optsRef.current%20%7D)",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "a97eff",
+        "hash": "a6c2cfc0",
+        "encoded": ".then((d)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "a97eff",
+        "hash": "d2138df3",
+        "encoded": "if%20(!alive)%20return;",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "a97eff",
+        "hash": "0cb14cb2",
+        "encoded": "setData(d);",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "a97eff",
+        "hash": "9115e73f",
+        "encoded": "setLoading(false);",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "a97eff",
+        "hash": "d9f26ae5",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a97eff",
+        "hash": "9399737d",
+        "encoded": ".catch((e)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "a97eff",
+        "hash": "dad8cf38",
+        "encoded": "if%20(!alive)%20return;",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "a97eff",
+        "hash": "f79d8eda",
+        "encoded": "setError(e);",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "a97eff",
+        "hash": "77f60410",
+        "encoded": "setLoading(false);",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "a97eff",
+        "hash": "6f909b24",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "a97eff",
+        "hash": "a04316b5",
+        "encoded": "return%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "a97eff",
+        "hash": "c2d12c26",
+        "encoded": "alive%20=%20false;",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "a97eff",
+        "hash": "1bce8a5b",
+        "encoded": "ac.abort();",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "a97eff",
+        "hash": "6fab5950",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "a97eff",
+        "hash": "d89b048d",
+        "encoded": "//%20eslint-disable-next-line%20react-hooks/exhaustive-deps",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "a97eff",
+        "hash": "7bb57b3d",
+        "encoded": "%7D,%20%5Burl,%20tick%5D);",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "a97eff",
+        "hash": "93e9dfb2",
+        "encoded": "return%20%7B%20data,%20error,%20loading,%20reload%20%7D;",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "a97eff",
+        "hash": "88fadba2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

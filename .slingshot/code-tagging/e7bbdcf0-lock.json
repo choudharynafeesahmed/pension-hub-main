@@ -1,0 +1,685 @@
+{
+  "src\\hooks\\usePensionData.js": {
+    "filename": "usePensionData.js",
+    "path": "src\\hooks\\usePensionData.js",
+    "version": "1.1",
+    "chunks": {
+      "618c82": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767699695,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "e6188a15",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "618c82",
+        "hash": "857cd80b",
+        "encoded": "import%20%7B%20useMemo%20%7D%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "618c82",
+        "hash": "678e9231",
+        "encoded": "import%20%7B%20useJson%20%7D%20from%20%22./useJson%22;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "618c82",
+        "hash": "ba7f5a91",
+        "encoded": "//%20Paths%20served%20from%20public/;%20same-origin,%20no%20auth%20required",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "618c82",
+        "hash": "21cb0338",
+        "encoded": "const%20PATHS%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "618c82",
+        "hash": "450faeca",
+        "encoded": "users:%20%22/data/users.json%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "618c82",
+        "hash": "601bbebf",
+        "encoded": "providers:%20%22/data/providers.json%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "618c82",
+        "hash": "701f7a51",
+        "encoded": "accounts:%20%22/data/accounts.json%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "618c82",
+        "hash": "21ee1c95",
+        "encoded": "funds:%20%22/data/funds.json%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "618c82",
+        "hash": "b6d14633",
+        "encoded": "holdings:%20%22/data/holdings.json%22,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "618c82",
+        "hash": "28778823",
+        "encoded": "contributions:%20%22/data/contributions.json%22,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "618c82",
+        "hash": "2debf173",
+        "encoded": "transactions:%20%22/data/transactions.json%22",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "618c82",
+        "hash": "088615cc",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "618c82",
+        "hash": "d879fdcb",
+        "encoded": "export%20function%20usePensionData(options%20=%20%7B%7D)%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "618c82",
+        "hash": "af177ce1",
+        "encoded": "const%20users%20=%20useJson(PATHS.users,%20options);",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "618c82",
+        "hash": "d36c7d22",
+        "encoded": "const%20providers%20=%20useJson(PATHS.providers,%20options);",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "618c82",
+        "hash": "f07ebd8c",
+        "encoded": "const%20accounts%20=%20useJson(PATHS.accounts,%20options);",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "618c82",
+        "hash": "562d4b3d",
+        "encoded": "const%20funds%20=%20useJson(PATHS.funds,%20options);",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "618c82",
+        "hash": "f6d23427",
+        "encoded": "const%20holdings%20=%20useJson(PATHS.holdings,%20options);",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "618c82",
+        "hash": "7b6b3307",
+        "encoded": "const%20contributions%20=%20useJson(PATHS.contributions,%20options);",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "618c82",
+        "hash": "05d0b5dd",
+        "encoded": "const%20transactions%20=%20useJson(PATHS.transactions,%20options);",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "618c82",
+        "hash": "408ad242",
+        "encoded": "const%20loading%20=",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "618c82",
+        "hash": "57cdc89a",
+        "encoded": "users.loading%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "618c82",
+        "hash": "0b97512a",
+        "encoded": "providers.loading%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "618c82",
+        "hash": "49b8ec62",
+        "encoded": "accounts.loading%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "618c82",
+        "hash": "e58b724b",
+        "encoded": "funds.loading%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "618c82",
+        "hash": "48eea9cb",
+        "encoded": "holdings.loading%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "618c82",
+        "hash": "77d6132e",
+        "encoded": "contributions.loading%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "618c82",
+        "hash": "2b3c78a0",
+        "encoded": "transactions.loading;",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "618c82",
+        "hash": "12a3f52f",
+        "encoded": "const%20error%20=",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "618c82",
+        "hash": "67e8552b",
+        "encoded": "users.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "618c82",
+        "hash": "da0db6e5",
+        "encoded": "providers.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "618c82",
+        "hash": "68168652",
+        "encoded": "accounts.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "618c82",
+        "hash": "f207ecfa",
+        "encoded": "funds.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "618c82",
+        "hash": "fb35e528",
+        "encoded": "holdings.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "618c82",
+        "hash": "5c89aeaa",
+        "encoded": "contributions.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "618c82",
+        "hash": "53a4db84",
+        "encoded": "transactions.error%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "618c82",
+        "hash": "5d780269",
+        "encoded": "null;",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "618c82",
+        "hash": "bda68190",
+        "encoded": "const%20data%20=%20useMemo(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "618c82",
+        "hash": "8b3bcb45",
+        "encoded": "if%20(",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "618c82",
+        "hash": "ecbe7a31",
+        "encoded": "!users.data%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "618c82",
+        "hash": "18465b93",
+        "encoded": "!providers.data%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "618c82",
+        "hash": "b05ec7a1",
+        "encoded": "!accounts.data%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "618c82",
+        "hash": "ff3e40fe",
+        "encoded": "!funds.data%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "618c82",
+        "hash": "e096fe40",
+        "encoded": "!holdings.data%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "618c82",
+        "hash": "bb9d96bd",
+        "encoded": "!contributions.data%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "618c82",
+        "hash": "9a3c9395",
+        "encoded": "!transactions.data",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "618c82",
+        "hash": "5b4489d1",
+        "encoded": ")%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "618c82",
+        "hash": "483ffd40",
+        "encoded": "return%20null;",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "618c82",
+        "hash": "e392f376",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "618c82",
+        "hash": "4e67fcaf",
+        "encoded": "//%20Index%20helpers",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "618c82",
+        "hash": "79c4ce98",
+        "encoded": "const%20byId%20=%20(arr)%20=%3E%20Object.fromEntries(arr.map((x)%20=%3E%20%5Bx.id,%20x%5D));",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "618c82",
+        "hash": "238f3009",
+        "encoded": "const%20groupBy%20=%20(arr,%20key)%20=%3E",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "618c82",
+        "hash": "83ef5f67",
+        "encoded": "arr.reduce((m,%20it)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "618c82",
+        "hash": "79729934",
+        "encoded": "const%20k%20=%20it%5Bkey%5D;",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "618c82",
+        "hash": "42476ce7",
+        "encoded": "(m%5Bk%5D%20%7C%7C=%20%5B%5D).push(it);",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "618c82",
+        "hash": "6d3f9b15",
+        "encoded": "return%20m;",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "618c82",
+        "hash": "0e7537ff",
+        "encoded": "%7D,%20%7B%7D);",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "618c82",
+        "hash": "95a41c13",
+        "encoded": "const%20usersById%20=%20byId(users.data);",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "618c82",
+        "hash": "9988e022",
+        "encoded": "const%20providersById%20=%20byId(providers.data);",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "618c82",
+        "hash": "0e55cddb",
+        "encoded": "const%20accountsById%20=%20byId(accounts.data);",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "618c82",
+        "hash": "12f3494c",
+        "encoded": "const%20fundsById%20=%20byId(funds.data);",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "618c82",
+        "hash": "4c2b819b",
+        "encoded": "const%20accountsByUser%20=%20groupBy(accounts.data,%20%22userId%22);",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "618c82",
+        "hash": "ba180b70",
+        "encoded": "const%20holdingsByAccount%20=%20groupBy(holdings.data,%20%22accountId%22);",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "618c82",
+        "hash": "2ba3c098",
+        "encoded": "const%20contributionsByAccount%20=%20groupBy(contributions.data,%20%22accountId%22);",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "618c82",
+        "hash": "aee30775",
+        "encoded": "const%20transactionsByAccount%20=%20groupBy(transactions.data,%20%22accountId%22);",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "618c82",
+        "hash": "cda4daae",
+        "encoded": "//%20Derived:%20account%20summaries%20aligned%20with%20balances",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "618c82",
+        "hash": "9191dee3",
+        "encoded": "const%20accountSummaries%20=%20accounts.data.map((a)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "618c82",
+        "hash": "55bea10c",
+        "encoded": "const%20hs%20=%20(holdingsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D);",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "618c82",
+        "hash": "54dabc26",
+        "encoded": "const%20valueSum%20=%20hs.reduce((s,%20h)%20=%3E%20s%20+%20Number(h.value%20%7C%7C%200),%200);",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "618c82",
+        "hash": "ec29f9af",
+        "encoded": "const%20delta%20=%20Number((Number(a.balance)%20-%20valueSum).toFixed(2));",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "618c82",
+        "hash": "8794f4bb",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "618c82",
+        "hash": "85986fb0",
+        "encoded": "...a,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "618c82",
+        "hash": "b40b0cee",
+        "encoded": "provider:%20providersById%5Ba.providerId%5D?.name%20%7C%7C%20a.providerId,",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "618c82",
+        "hash": "7547a958",
+        "encoded": "userName:%20usersById%5Ba.userId%5D?.fullName%20%7C%7C%20a.userId,",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "618c82",
+        "hash": "af251853",
+        "encoded": "holdingsValue:%20valueSum,",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "618c82",
+        "hash": "1fddf032",
+        "encoded": "balanceDelta:%20delta,",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "618c82",
+        "hash": "0a698621",
+        "encoded": "holdingsCount:%20hs.length,",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "618c82",
+        "hash": "7cf48a9c",
+        "encoded": "contributionCount:%20(contributionsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).length,",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "618c82",
+        "hash": "1797a709",
+        "encoded": "transactionCount:%20(transactionsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).length",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "618c82",
+        "hash": "548cc23c",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "618c82",
+        "hash": "cd46b899",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "618c82",
+        "hash": "69e70b24",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "618c82",
+        "hash": "5ddf9799",
+        "encoded": "users:%20users.data,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "618c82",
+        "hash": "540c3d5e",
+        "encoded": "providers:%20providers.data,",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "618c82",
+        "hash": "146d7e65",
+        "encoded": "accounts:%20accounts.data,",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "618c82",
+        "hash": "1d6474a4",
+        "encoded": "funds:%20funds.data,",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "618c82",
+        "hash": "f9857af7",
+        "encoded": "holdings:%20holdings.data,",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "618c82",
+        "hash": "2f98cf19",
+        "encoded": "contributions:%20contributions.data,",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "618c82",
+        "hash": "317bf003",
+        "encoded": "transactions:%20transactions.data,",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "618c82",
+        "hash": "89f73cc6",
+        "encoded": "usersById,",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "618c82",
+        "hash": "1cc9c9ba",
+        "encoded": "providersById,",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "618c82",
+        "hash": "85685e07",
+        "encoded": "accountsById,",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "618c82",
+        "hash": "95ad22c4",
+        "encoded": "fundsById,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "618c82",
+        "hash": "678b5a4c",
+        "encoded": "accountsByUser,",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "618c82",
+        "hash": "96bee217",
+        "encoded": "holdingsByAccount,",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "618c82",
+        "hash": "90fbf820",
+        "encoded": "contributionsByAccount,",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "618c82",
+        "hash": "1bd4ca59",
+        "encoded": "transactionsByAccount,",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "618c82",
+        "hash": "fe2f4f12",
+        "encoded": "accountSummaries",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "618c82",
+        "hash": "47b9c954",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "618c82",
+        "hash": "33e343f5",
+        "encoded": "%7D,%20%5B",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "618c82",
+        "hash": "14f948ec",
+        "encoded": "users.data,",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "618c82",
+        "hash": "251c3574",
+        "encoded": "providers.data,",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "618c82",
+        "hash": "cda5864d",
+        "encoded": "accounts.data,",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "618c82",
+        "hash": "03fe03b8",
+        "encoded": "funds.data,",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "618c82",
+        "hash": "e5b3b3f4",
+        "encoded": "holdings.data,",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "618c82",
+        "hash": "eedd2f46",
+        "encoded": "contributions.data,",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "618c82",
+        "hash": "fec50473",
+        "encoded": "transactions.data",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "618c82",
+        "hash": "47ef6889",
+        "encoded": "%5D);",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "618c82",
+        "hash": "cf869946",
+        "encoded": "return%20%7B%20data,%20loading,%20error%20%7D;",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "618c82",
+        "hash": "0ca73160",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

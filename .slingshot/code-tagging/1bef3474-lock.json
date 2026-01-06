@@ -1,0 +1,745 @@
+{
+  "src\\hooks\\dataClient.js": {
+    "filename": "dataClient.js",
+    "path": "src\\hooks\\dataClient.js",
+    "version": "1.1",
+    "chunks": {
+      "bf2bee": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767699675,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "9c54ad09",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "bf2bee",
+        "hash": "ae958e0a",
+        "encoded": "//%20Lightweight%20JSON%20client%20with%20in-memory%20cache,%20timeout,%20retries,%20and%20correlation%20IDs.",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "bf2bee",
+        "hash": "6dadfb61",
+        "encoded": "const%20cache%20=%20new%20Map();%20//%20key%20-%3E%20%7B%20ts,%20data,%20promise%20%7D",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "bf2bee",
+        "hash": "9fcda926",
+        "encoded": "const%20DEFAULT_TTL%20=%2030_000;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "bf2bee",
+        "hash": "ad0fcdd4",
+        "encoded": "const%20DEFAULT_TIMEOUT%20=%208_000;",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "bf2bee",
+        "hash": "d4d762d3",
+        "encoded": "const%20DEFAULT_RETRIES%20=%202;",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "bf2bee",
+        "hash": "7538bcaf",
+        "encoded": "function%20sleep(ms)%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "bf2bee",
+        "hash": "a02f0564",
+        "encoded": "return%20new%20Promise((r)%20=%3E%20setTimeout(r,%20ms));",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "bf2bee",
+        "hash": "2ce165fa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "bf2bee",
+        "hash": "d8a3f51b",
+        "encoded": "function%20withTimeout(signal,%20ms)%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "bf2bee",
+        "hash": "6dfbb416",
+        "encoded": "const%20controller%20=%20new%20AbortController();",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "bf2bee",
+        "hash": "971191de",
+        "encoded": "const%20timer%20=%20setTimeout(()%20=%3E%20controller.abort(new%20DOMException(%22TimeoutError%22,%20%22AbortError%22)),%20ms);",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "bf2bee",
+        "hash": "ebb3a447",
+        "encoded": "//%20If%20upstream%20cancels,%20propagate",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "bf2bee",
+        "hash": "040f6b43",
+        "encoded": "const%20cleanup%20=%20()%20=%3E%20clearTimeout(timer);",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "bf2bee",
+        "hash": "367687c2",
+        "encoded": "if%20(signal)%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "bf2bee",
+        "hash": "5a04dffe",
+        "encoded": "if%20(signal.aborted)%20controller.abort(signal.reason);",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "bf2bee",
+        "hash": "bed6415d",
+        "encoded": "else%20signal.addEventListener(%22abort%22,%20()%20=%3E%20controller.abort(signal.reason),%20%7B%20once:%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "bf2bee",
+        "hash": "ee39c532",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "bf2bee",
+        "hash": "e6a5e8af",
+        "encoded": "return%20%7B%20signal:%20controller.signal,%20cleanup%20%7D;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "bf2bee",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "bf2bee",
+        "hash": "63f43184",
+        "encoded": "function%20buildUrl(url,%20cacheBust)%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "bf2bee",
+        "hash": "b5182986",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "bf2bee",
+        "hash": "843815f8",
+        "encoded": "const%20u%20=%20new%20URL(url,%20window.location.origin);",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "bf2bee",
+        "hash": "1199a2f8",
+        "encoded": "if%20(cacheBust)%20u.searchParams.set(%22_%22,%20String(Date.now()));",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "bf2bee",
+        "hash": "3760b3c7",
+        "encoded": "return%20u.toString();",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "bf2bee",
+        "hash": "ff6213af",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "bf2bee",
+        "hash": "8ef8c504",
+        "encoded": "//%20If%20url%20is%20relative%20and%20URL()%20fails%20with%20base,%20fallback",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "bf2bee",
+        "hash": "5971b5cd",
+        "encoded": "if%20(cacheBust)%20%7B",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "bf2bee",
+        "hash": "16f7acdb",
+        "encoded": "const%20sep%20=%20url.includes(%22?%22)%20?%20%22&%22%20:%20%22?%22;",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "bf2bee",
+        "hash": "f6b49716",
+        "encoded": "return%20%60$%7Burl%7D$%7Bsep%7D_=$%7BDate.now()%7D%60;",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "bf2bee",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "bf2bee",
+        "hash": "e4d5b754",
+        "encoded": "return%20url;",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "bf2bee",
+        "hash": "dfad4947",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "bf2bee",
+        "hash": "b14d68ea",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "bf2bee",
+        "hash": "b30b62f0",
+        "encoded": "export%20function%20clearCache(url)%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "bf2bee",
+        "hash": "57ca47d5",
+        "encoded": "if%20(!url)%20cache.clear();",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "bf2bee",
+        "hash": "7809c24c",
+        "encoded": "else%20cache.delete(url);",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "bf2bee",
+        "hash": "98f83ab6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "bf2bee",
+        "hash": "99e504e1",
+        "encoded": "export%20async%20function%20fetchJson(url,%20opts%20=%20%7B%7D)%20%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "bf2bee",
+        "hash": "2218d222",
+        "encoded": "const%20%7B",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "bf2bee",
+        "hash": "dcd8c594",
+        "encoded": "ttlMs%20=%20DEFAULT_TTL,",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "bf2bee",
+        "hash": "1a3ffb83",
+        "encoded": "retries%20=%20DEFAULT_RETRIES,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "bf2bee",
+        "hash": "c7b56901",
+        "encoded": "timeoutMs%20=%20DEFAULT_TIMEOUT,",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "bf2bee",
+        "hash": "bc7e9d0f",
+        "encoded": "cacheBust%20=%20false,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "bf2bee",
+        "hash": "ff768d18",
+        "encoded": "signal",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "bf2bee",
+        "hash": "8e84009b",
+        "encoded": "%7D%20=%20opts;",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "bf2bee",
+        "hash": "d25ddb49",
+        "encoded": "if%20(typeof%20url%20!==%20%22string%22%20%7C%7C%20!url)%20%7B",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "bf2bee",
+        "hash": "08264a91",
+        "encoded": "throw%20new%20Error(%22fetchJson:%20url%20must%20be%20a%20non-empty%20string%22);",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "bf2bee",
+        "hash": "5c9d24d4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "bf2bee",
+        "hash": "35d2842b",
+        "encoded": "const%20now%20=%20Date.now();",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "bf2bee",
+        "hash": "2000ddc5",
+        "encoded": "const%20cached%20=%20cache.get(url);",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "bf2bee",
+        "hash": "72fdcc4a",
+        "encoded": "if%20(cached%20&&%20cached.data%20&&%20now%20-%20cached.ts%20%3C%20ttlMs)%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "bf2bee",
+        "hash": "e88a9865",
+        "encoded": "return%20cached.data;",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "bf2bee",
+        "hash": "42f7c135",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "bf2bee",
+        "hash": "843d3de8",
+        "encoded": "if%20(cached%20&&%20cached.promise)%20%7B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "bf2bee",
+        "hash": "e7b79fbb",
+        "encoded": "return%20cached.promise;%20//%20de-dup%20concurrent%20callers",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "bf2bee",
+        "hash": "78db855a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "bf2bee",
+        "hash": "2615f9e7",
+        "encoded": "const%20requestId%20=%20crypto?.randomUUID?.()%20??%20Math.random().toString(36).slice(2);",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "bf2bee",
+        "hash": "59770469",
+        "encoded": "const%20finalUrl%20=%20buildUrl(url,%20cacheBust);",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "bf2bee",
+        "hash": "a2e2a65b",
+        "encoded": "const%20doFetch%20=%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "bf2bee",
+        "hash": "e95e74e9",
+        "encoded": "const%20%7B%20signal:%20timeoutSignal,%20cleanup%20%7D%20=%20withTimeout(signal,%20timeoutMs);",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "bf2bee",
+        "hash": "ad55274c",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "bf2bee",
+        "hash": "4901bf73",
+        "encoded": "const%20res%20=%20await%20fetch(finalUrl,%20%7B",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "bf2bee",
+        "hash": "5df8bd22",
+        "encoded": "method:%20%22GET%22,",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "bf2bee",
+        "hash": "532a1ebb",
+        "encoded": "headers:%20%7B",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "bf2bee",
+        "hash": "806f2ac8",
+        "encoded": "%22Accept%22:%20%22application/json%22,",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "bf2bee",
+        "hash": "03da5a76",
+        "encoded": "%22X-Correlation-Id%22:%20requestId",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "bf2bee",
+        "hash": "11fc4278",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "bf2bee",
+        "hash": "d160efc6",
+        "encoded": "signal:%20timeoutSignal,",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "bf2bee",
+        "hash": "02c9dd02",
+        "encoded": "//%20mode,%20credentials%20defaults%20are%20fine%20for%20same-origin%20public%20assets",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "bf2bee",
+        "hash": "8d10f9ca",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "bf2bee",
+        "hash": "aba00e9c",
+        "encoded": "if%20(!res.ok)%20%7B",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "bf2bee",
+        "hash": "652bca86",
+        "encoded": "const%20text%20=%20await%20res.text().catch(()%20=%3E%20%22%22);",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "bf2bee",
+        "hash": "9901242c",
+        "encoded": "const%20err%20=%20new%20Error(%60HTTP%20$%7Bres.status%7D%20$%7Bres.statusText%7D%60%20+%20(text%20?%20%60:%20$%7Btext.slice(0,%20200)%7D%60%20:%20%22%22));",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "bf2bee",
+        "hash": "203aff85",
+        "encoded": "err.status%20=%20res.status;",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "bf2bee",
+        "hash": "b7367911",
+        "encoded": "throw%20err;",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "bf2bee",
+        "hash": "7bb00016",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "bf2bee",
+        "hash": "15ab0364",
+        "encoded": "const%20data%20=%20await%20res.json();",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "bf2bee",
+        "hash": "b1fd7f53",
+        "encoded": "return%20data;",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "bf2bee",
+        "hash": "716e1c07",
+        "encoded": "%7D%20finally%20%7B",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "bf2bee",
+        "hash": "7b3f076f",
+        "encoded": "cleanup();",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "bf2bee",
+        "hash": "1a9d363f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "bf2bee",
+        "hash": "2521f398",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "bf2bee",
+        "hash": "33080178",
+        "encoded": "let%20attempt%20=%200;",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "bf2bee",
+        "hash": "051fce66",
+        "encoded": "const%20jitter%20=%20()%20=%3E%20Math.floor(100%20+%20Math.random()%20*%20150);",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "bf2bee",
+        "hash": "96bd932b",
+        "encoded": "const%20task%20=%20(async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "bf2bee",
+        "hash": "d76682f8",
+        "encoded": "//%20Retry%20only%20on%20network/timeout/5xx;%20not%20on%204xx%20or%20JSON%20parse%20errors",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "bf2bee",
+        "hash": "9c52c977",
+        "encoded": "while%20(true)%20%7B",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "bf2bee",
+        "hash": "e6356692",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "bf2bee",
+        "hash": "4c77c34b",
+        "encoded": "const%20data%20=%20await%20doFetch();",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "bf2bee",
+        "hash": "271931da",
+        "encoded": "cache.set(url,%20%7B%20ts:%20Date.now(),%20data%20%7D);",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "bf2bee",
+        "hash": "2f49df54",
+        "encoded": "return%20data;",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "bf2bee",
+        "hash": "f7ef36b1",
+        "encoded": "%7D%20catch%20(e)%20%7B",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "bf2bee",
+        "hash": "7a620edf",
+        "encoded": "attempt%20+=%201;",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "bf2bee",
+        "hash": "e9672ef9",
+        "encoded": "const%20retryable%20=",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "bf2bee",
+        "hash": "66e4e5ba",
+        "encoded": "e?.name%20===%20%22AbortError%22%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "bf2bee",
+        "hash": "26eaa762",
+        "encoded": "e?.message?.includes(%22NetworkError%22)%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "bf2bee",
+        "hash": "04a6db72",
+        "encoded": "e?.message?.includes(%22Failed%20to%20fetch%22)%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "bf2bee",
+        "hash": "8e6eaebd",
+        "encoded": "(typeof%20e?.status%20===%20%22number%22%20&&%20e.status%20%3E=%20500);",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "bf2bee",
+        "hash": "b05b9dee",
+        "encoded": "if%20(!retryable%20%7C%7C%20attempt%20%3E%20retries)%20%7B",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "bf2bee",
+        "hash": "cd1ea88a",
+        "encoded": "console.error(%22%5BdataClient%5D%20fetch%20failed%22,%20%7B%20url,%20requestId,%20attempt,%20error:%20String(e)%20%7D);",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "bf2bee",
+        "hash": "19d568ed",
+        "encoded": "cache.delete(url);",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "bf2bee",
+        "hash": "7daa35c7",
+        "encoded": "throw%20e;",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "bf2bee",
+        "hash": "fd8e1155",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "bf2bee",
+        "hash": "69d3dacb",
+        "encoded": "const%20backoff%20=%20Math.min(500%20*%202%20**%20(attempt%20-%201)%20+%20jitter(),%203000);",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "bf2bee",
+        "hash": "64580b9d",
+        "encoded": "await%20sleep(backoff);",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "bf2bee",
+        "hash": "2de22ffd",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "bf2bee",
+        "hash": "056477bc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "bf2bee",
+        "hash": "7fab47d3",
+        "encoded": "%7D)();",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "bf2bee",
+        "hash": "2ba18737",
+        "encoded": "cache.set(url,%20%7B%20ts:%20now,%20data:%20cached?.data,%20promise:%20task%20%7D);",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "bf2bee",
+        "hash": "25764e5c",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "bf2bee",
+        "hash": "56b0f033",
+        "encoded": "const%20data%20=%20await%20task;",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "bf2bee",
+        "hash": "ad441271",
+        "encoded": "return%20data;",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "bf2bee",
+        "hash": "c54dc3bc",
+        "encoded": "%7D%20finally%20%7B",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "bf2bee",
+        "hash": "9efe88e0",
+        "encoded": "const%20c%20=%20cache.get(url);",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "bf2bee",
+        "hash": "e2997115",
+        "encoded": "if%20(c?.promise%20===%20task)%20%7B",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "bf2bee",
+        "hash": "b0b6ed88",
+        "encoded": "//%20retain%20data,%20drop%20promise",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "bf2bee",
+        "hash": "0bb87c73",
+        "encoded": "cache.set(url,%20%7B%20ts:%20Date.now(),%20data:%20c.data%20%7D);",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "bf2bee",
+        "hash": "ff6991dc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "bf2bee",
+        "hash": "14fa0baa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "bf2bee",
+        "hash": "c1055582",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

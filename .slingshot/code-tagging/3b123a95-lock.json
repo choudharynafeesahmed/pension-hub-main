@@ -1,0 +1,487 @@
+{
+  "src\\components\\dashboard\\DataPreview.jsx": {
+    "filename": "DataPreview.jsx",
+    "path": "src\\components\\dashboard\\DataPreview.jsx",
+    "version": "1.1",
+    "chunks": {
+      "5f661c": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767699703,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "5110b8e6",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "5f661c",
+        "hash": "d4f2d3d0",
+        "encoded": "import%20React%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "5f661c",
+        "hash": "07afccb4",
+        "encoded": "import%20%7B%20usePensionData%20%7D%20from%20%22../../hooks/usePensionData%22;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "5f661c",
+        "hash": "52ba014a",
+        "encoded": "export%20default%20function%20DataPreview()%20%7B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "5f661c",
+        "hash": "439cc0b1",
+        "encoded": "const%20%7B%20data,%20loading,%20error%20%7D%20=%20usePensionData(%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "5f661c",
+        "hash": "dfb1fe9b",
+        "encoded": "ttlMs:%2060_000,%20//%20cache%20for%201%20minute",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "5f661c",
+        "hash": "29335590",
+        "encoded": "retries:%202,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "5f661c",
+        "hash": "e24e2181",
+        "encoded": "timeoutMs:%208_000",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "5f661c",
+        "hash": "0269e656",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "5f661c",
+        "hash": "3874a268",
+        "encoded": "if%20(loading)%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "5f661c",
+        "hash": "588b7e4f",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "5f661c",
+        "hash": "911412d9",
+        "encoded": "%3Cdiv%20role=%22status%22%20aria-live=%22polite%22%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "5f661c",
+        "hash": "e5ae0845",
+        "encoded": "Loading%20pension%20dataset%E2%80%A6",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "5f661c",
+        "hash": "0926e51b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "5f661c",
+        "hash": "228115a3",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "5f661c",
+        "hash": "0a373349",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "5f661c",
+        "hash": "fd307319",
+        "encoded": "if%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "5f661c",
+        "hash": "953cfd5d",
+        "encoded": "//%20Safe%20message%20for%20users,%20details%20in%20console%20from%20dataClient",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "5f661c",
+        "hash": "48744816",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "5f661c",
+        "hash": "bed693bc",
+        "encoded": "%3Cdiv%20role=%22alert%22%20aria-live=%22assertive%22%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "5f661c",
+        "hash": "ab703945",
+        "encoded": "Could%20not%20load%20dataset.%20Please%20try%20again.",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "5f661c",
+        "hash": "9351f2ae",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "5f661c",
+        "hash": "d4cda3e6",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "5f661c",
+        "hash": "71870443",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "5f661c",
+        "hash": "7e958475",
+        "encoded": "if%20(!data)%20return%20null;",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "5f661c",
+        "hash": "c1ddaa57",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "5f661c",
+        "hash": "7381a650",
+        "encoded": "%3Csection%20aria-labelledby=%22dataset-summary%22%3E",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "5f661c",
+        "hash": "58622c7b",
+        "encoded": "%3Ch2%20id=%22dataset-summary%22%3EDataset%20summary%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "5f661c",
+        "hash": "f3f3172e",
+        "encoded": "%3Cul%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "5f661c",
+        "hash": "c758a234",
+        "encoded": "%3Cli%3EUsers:%20%7Bdata.users.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "5f661c",
+        "hash": "a18de09b",
+        "encoded": "%3Cli%3EProviders:%20%7Bdata.providers.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "5f661c",
+        "hash": "324e4936",
+        "encoded": "%3Cli%3EAccounts:%20%7Bdata.accounts.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "5f661c",
+        "hash": "45677e48",
+        "encoded": "%3Cli%3EFunds:%20%7Bdata.funds.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "5f661c",
+        "hash": "de1f3112",
+        "encoded": "%3Cli%3EHoldings:%20%7Bdata.holdings.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "5f661c",
+        "hash": "672a118b",
+        "encoded": "%3Cli%3EContributions:%20%7Bdata.contributions.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "5f661c",
+        "hash": "d47ed119",
+        "encoded": "%3Cli%3ETransactions:%20%7Bdata.transactions.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "5f661c",
+        "hash": "8007c9c4",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "5f661c",
+        "hash": "04d41c1c",
+        "encoded": "%3Ch3%3EAccounts%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "5f661c",
+        "hash": "c98a722c",
+        "encoded": "%3Cdiv%20style=%7B%7B%20overflowX:%20%22auto%22%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "5f661c",
+        "hash": "5baa3d10",
+        "encoded": "%3Ctable%20aria-label=%22Accounts%20overview%22%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "5f661c",
+        "hash": "1ba9a12c",
+        "encoded": "%3Cthead%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "5f661c",
+        "hash": "901a15f0",
+        "encoded": "%3Ctr%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "5f661c",
+        "hash": "da65210a",
+        "encoded": "%3Cth%20scope=%22col%22%3EAccount%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "5f661c",
+        "hash": "f1b10fe6",
+        "encoded": "%3Cth%20scope=%22col%22%3EUser%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "5f661c",
+        "hash": "8ae18058",
+        "encoded": "%3Cth%20scope=%22col%22%3EProvider%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "5f661c",
+        "hash": "3fd89fa3",
+        "encoded": "%3Cth%20scope=%22col%22%3EBalance%20(GBP)%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "5f661c",
+        "hash": "799de5f2",
+        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%20Value%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "5f661c",
+        "hash": "b2262f74",
+        "encoded": "%3Cth%20scope=%22col%22%3EDelta%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "5f661c",
+        "hash": "1c0463bf",
+        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "5f661c",
+        "hash": "77978c49",
+        "encoded": "%3Cth%20scope=%22col%22%3EContrib%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "5f661c",
+        "hash": "b994f8d6",
+        "encoded": "%3Cth%20scope=%22col%22%3ETxns%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "5f661c",
+        "hash": "2b103b50",
+        "encoded": "%3C/tr%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "5f661c",
+        "hash": "73267031",
+        "encoded": "%3C/thead%3E",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "5f661c",
+        "hash": "2bbe307c",
+        "encoded": "%3Ctbody%3E",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "5f661c",
+        "hash": "decefaff",
+        "encoded": "%7Bdata.accountSummaries.map((a)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "5f661c",
+        "hash": "dee94cf5",
+        "encoded": "%3Ctr%20key=%7Ba.id%7D%3E",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "5f661c",
+        "hash": "b596b143",
+        "encoded": "%3Ctd%3E%7Ba.accountNumber%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "5f661c",
+        "hash": "03f85f2d",
+        "encoded": "%3Ctd%3E%7Ba.userName%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "5f661c",
+        "hash": "2cd535b0",
+        "encoded": "%3Ctd%3E%7Ba.provider%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "5f661c",
+        "hash": "bf63d9dd",
+        "encoded": "%3Ctd%3E%7BNumber(a.balance).toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "5f661c",
+        "hash": "494795c7",
+        "encoded": "%3Ctd%3E%7BNumber(a.holdingsValue).toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "5f661c",
+        "hash": "3121ffbc",
+        "encoded": "%3Ctd%20style=%7B%7B%20color:%20a.balanceDelta%20===%200%20?%20%22inherit%22%20:%20%22crimson%22%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "5f661c",
+        "hash": "8fd12c18",
+        "encoded": "%7Ba.balanceDelta.toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "5f661c",
+        "hash": "a0eb60b0",
+        "encoded": "%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "5f661c",
+        "hash": "1c555b8f",
+        "encoded": "%3Ctd%3E%7Ba.holdingsCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "5f661c",
+        "hash": "aaa39432",
+        "encoded": "%3Ctd%3E%7Ba.contributionCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "5f661c",
+        "hash": "e10fc699",
+        "encoded": "%3Ctd%3E%7Ba.transactionCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "5f661c",
+        "hash": "fe462e64",
+        "encoded": "%3C/tr%3E",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "5f661c",
+        "hash": "c80021e9",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "5f661c",
+        "hash": "8ca40d80",
+        "encoded": "%3C/tbody%3E",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "5f661c",
+        "hash": "d34f5d45",
+        "encoded": "%3C/table%3E",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "5f661c",
+        "hash": "4fa5e5b5",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "5f661c",
+        "hash": "bea71458",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "5f661c",
+        "hash": "198811f5",
+        "encoded": "Note:%20Delta%20highlights%20any%20mismatch%20between%20recorded%20balance%20and%20sum%20of%20holdings%20for%20quick%20diagnostics.",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "5f661c",
+        "hash": "46a7b4a1",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "5f661c",
+        "hash": "9190977b",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "5f661c",
+        "hash": "42df1560",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "5f661c",
+        "hash": "a2f26355",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
