@@ -1,0 +1,109 @@
+{
+  "src\\pages\\RootGate.jsx": {
+    "filename": "RootGate.jsx",
+    "path": "src\\pages\\RootGate.jsx",
+    "version": "1.1",
+    "chunks": {
+      "8737fc": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767704432,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "5f7cd56a",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "8737fc",
+        "hash": "d4f2d3d0",
+        "encoded": "import%20React%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "8737fc",
+        "hash": "11aea76d",
+        "encoded": "import%20%7B%20useSelectedUser%20%7D%20from%20%22../hooks/SelectedUserContext%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "8737fc",
+        "hash": "aae38db3",
+        "encoded": "import%20UserSelectPage%20from%20%22./UserSelectPage%22;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "8737fc",
+        "hash": "3da07bb7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "8737fc",
+        "hash": "f05e4b5a",
+        "encoded": "*%20RootGate%20conditionally%20renders%20the%20user%20selection%20page%20BEFORE%20the%20hub.",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "8737fc",
+        "hash": "84339092",
+        "encoded": "*%20Wrap%20your%20app%20with%20%3CSelectedUserProvider%3E%3CRootGate%3E%7Byour%20hub%7D%3C/RootGate%3E%3C/SelectedUserProvider%3E",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "8737fc",
+        "hash": "0ae79b2f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "8737fc",
+        "hash": "ace3f255",
+        "encoded": "export%20default%20function%20RootGate(%7B%20children%20%7D)%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "8737fc",
+        "hash": "7a27f8af",
+        "encoded": "const%20%7B%20selectedUserId%20%7D%20=%20useSelectedUser();",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "8737fc",
+        "hash": "151395f8",
+        "encoded": "if%20(!selectedUserId)%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "8737fc",
+        "hash": "0e3c9180",
+        "encoded": "return%20%3CUserSelectPage%20/%3E;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "8737fc",
+        "hash": "e683dcf7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "8737fc",
+        "hash": "29a35670",
+        "encoded": "return%20%3C%3E%7Bchildren%7D%3C/%3E;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "8737fc",
+        "hash": "0a373349",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

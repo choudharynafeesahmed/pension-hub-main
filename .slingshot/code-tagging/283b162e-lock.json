@@ -1,0 +1,201 @@
+{
+  "src\\pages\\RootApp.jsx": {
+    "filename": "RootApp.jsx",
+    "path": "src\\pages\\RootApp.jsx",
+    "version": "1.1",
+    "chunks": {
+      "375dec": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767704597,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "dd4556b4",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "e7235a": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767706606,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "pasteCode",
+        "hash": "dd4556b4",
+        "messageId": "system_edaccbd0-eaff-11f0-892e-6958aea9d7ac",
+        "codeBlockId": "system_edaccbd0-eaff-11f0-892e-6958aea9d7ac-Codeblock-1",
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "375dec",
+        "hash": "d4f2d3d0",
+        "encoded": "import%20React%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "375dec",
+        "hash": "686846ae",
+        "encoded": "import%20%7B%20SelectedUserProvider%20%7D%20from%20%22../hooks/SelectedUserContext%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "375dec",
+        "hash": "7dccd6fa",
+        "encoded": "import%20RootGate%20from%20%22./RootGate%22;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "375dec",
+        "hash": "5ec139a7",
+        "encoded": "import%20DataPreview%20from%20%22../components/dashboard/DataPreview%22;",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "375dec",
+        "hash": "ca25c431",
+        "encoded": "//%20Root%20of%20the%20app:%20shows%20UserSelectPage%20(via%20RootGate)%20before%20the%20hub%20(DataPreview)",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "375dec",
+        "hash": "8a99c64d",
+        "encoded": "export%20default%20function%20RootApp()%20%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "375dec",
+        "hash": "6e738b41",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "375dec",
+        "hash": "40256e5e",
+        "encoded": "%3CSelectedUserProvider%3E",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "375dec",
+        "hash": "54789d9e",
+        "encoded": "%3CRootGate%3E",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "375dec",
+        "hash": "89ed0538",
+        "encoded": "%3CDataPreview%20/%3E",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "375dec",
+        "hash": "922b39fa",
+        "encoded": "%3C/RootGate%3E",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "375dec",
+        "hash": "308b8d3d",
+        "encoded": "%3C/SelectedUserProvider%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "375dec",
+        "hash": "15d9ead7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "e7235a",
+        "hash": "85ef8c2b",
+        "encoded": "import%20React%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "e7235a",
+        "hash": "55b41706",
+        "encoded": "import%20%7B%20SelectedUserProvider%20%7D%20from%20%22../hooks/SelectedUserContext%22;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "e7235a",
+        "hash": "083fbf19",
+        "encoded": "import%20RootGate%20from%20%22./RootGate%22;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "e7235a",
+        "hash": "5e0be07e",
+        "encoded": "import%20DataPreview%20from%20%22../components/dashboard/DataPreview%22;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "e7235a",
+        "hash": "2fb24b2d",
+        "encoded": "//%20Root%20of%20the%20app:%20shows%20UserSelectPage%20(via%20RootGate)%20before%20the%20hub%20(DataPreview)",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "e7235a",
+        "hash": "6cbb5ca6",
+        "encoded": "export%20default%20function%20RootApp()%20%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "e7235a",
+        "hash": "9dc64938",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "e7235a",
+        "hash": "845e7426",
+        "encoded": "%3CSelectedUserProvider%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "e7235a",
+        "hash": "150f4aff",
+        "encoded": "%3CRootGate%3E",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "e7235a",
+        "hash": "42628a27",
+        "encoded": "%3CDataPreview%20/%3E",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "e7235a",
+        "hash": "998a336a",
+        "encoded": "%3C/RootGate%3E",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "e7235a",
+        "hash": "3d775a05",
+        "encoded": "%3C/SelectedUserProvider%3E",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "e7235a",
+        "hash": "38c6736a",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "e7235a",
+        "hash": "46b23985",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

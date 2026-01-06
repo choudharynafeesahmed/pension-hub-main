@@ -1,0 +1,187 @@
+{
+  "src\\hooks\\dataConfig.js": {
+    "filename": "dataConfig.js",
+    "path": "src\\hooks\\dataConfig.js",
+    "version": "1.1",
+    "chunks": {
+      "f1a297": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767702850,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "ac732516",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "f1a297",
+        "hash": "91a79f98",
+        "encoded": "//%20Resolves%20the%20base%20URL%20for%20dataset%20JSON%20files.",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "f1a297",
+        "hash": "c63f08b5",
+        "encoded": "//%20Supports%20absolute%20http(s)%20URLs%20or%20app-relative%20paths.%20Falls%20back%20to%20%22/data/%22.",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "f1a297",
+        "hash": "84611348",
+        "encoded": "//%20Note:%20Browsers%20cannot%20fetch%20directly%20from%20Windows%20file%20paths%20(e.g.,%20C:%5C...).",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "f1a297",
+        "hash": "a2107003",
+        "encoded": "export%20function%20getDataBaseUrl()%20%7B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "f1a297",
+        "hash": "f947f888",
+        "encoded": "const%20raw%20=",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "f1a297",
+        "hash": "11e768a3",
+        "encoded": "(typeof%20import.meta%20!==%20%22undefined%22%20&&%20import.meta.env%20&&%20import.meta.env.VITE_DATA_BASE_URL)%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "f1a297",
+        "hash": "b9abab7b",
+        "encoded": "(typeof%20process%20!==%20%22undefined%22%20&&%20process.env%20&&%20process.env.REACT_APP_DATA_BASE_URL)%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "f1a297",
+        "hash": "8887af21",
+        "encoded": "%22/data/%22;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "f1a297",
+        "hash": "ab9403a3",
+        "encoded": "//%20Reject%20raw%20Windows%20filesystem%20paths;%20instruct%20to%20serve%20over%20HTTP.",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "f1a297",
+        "hash": "d7086a97",
+        "encoded": "if%20(/%5E%5Ba-zA-Z%5D:%5C%5C/.test(raw))%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "f1a297",
+        "hash": "fdbe7af0",
+        "encoded": "console.error(",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "f1a297",
+        "hash": "69567c4e",
+        "encoded": "%22%5BdataConfig%5D%20Detected%20Windows%20file%20path.%20Serve%20this%20folder%20over%20HTTP%20and%20set%20VITE_DATA_BASE_URL%20to%20that%20URL%20(e.g.,%20http://localhost:5050/).%20Falling%20back%20to%20/data/.%22",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "f1a297",
+        "hash": "15d9ead7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "f1a297",
+        "hash": "4084b68c",
+        "encoded": "return%20%22/data/%22;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "f1a297",
+        "hash": "c8f9d1c3",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "f1a297",
+        "hash": "7816bb38",
+        "encoded": "//%20Absolute%20http(s)%20URL",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "f1a297",
+        "hash": "0c8f9d33",
+        "encoded": "if%20(/%5Ehttps?:%5C/%5C//i.test(raw))%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "f1a297",
+        "hash": "157b4c02",
+        "encoded": "return%20raw.endsWith(%22/%22)%20?%20raw%20:%20raw%20+%20%22/%22;",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "f1a297",
+        "hash": "acbf036f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "f1a297",
+        "hash": "51f0135d",
+        "encoded": "//%20App-relative%20path",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "f1a297",
+        "hash": "d891f2c7",
+        "encoded": "const%20normalized%20=%20raw.startsWith(%22/%22)%20?%20raw%20:%20%22/%22%20+%20raw;",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "f1a297",
+        "hash": "fabd88e3",
+        "encoded": "return%20normalized.endsWith(%22/%22)%20?%20normalized%20:%20normalized%20+%20%22/%22;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "f1a297",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "f1a297",
+        "hash": "2ad1d88b",
+        "encoded": "export%20function%20resolveDataUrl(fileName)%20%7B",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "f1a297",
+        "hash": "6c73824b",
+        "encoded": "const%20base%20=%20getDataBaseUrl();",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "f1a297",
+        "hash": "4c45639a",
+        "encoded": "return%20%60$%7Bbase%7D$%7BfileName%7D%60;",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "f1a297",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -17,8 +17,581 @@
         "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
         "codeBlockId": null,
         "isActive": false
+      },
+      "a74392": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767703461,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "pasteCode",
+        "hash": "4619a71b",
+        "messageId": "system_2ab42580-eafd-11f0-892e-6958aea9d7ac",
+        "codeBlockId": "system_2ab42580-eafd-11f0-892e-6958aea9d7ac-Codeblock-2",
+        "isActive": true
       }
     },
-    "lines": {}
+    "lines": {
+      "0": {
+        "chunkId": "a74392",
+        "hash": "168722db",
+        "encoded": "import%20React,%20%7B%20useMemo,%20useState%20%7D%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "a74392",
+        "hash": "07afccb4",
+        "encoded": "import%20%7B%20usePensionData%20%7D%20from%20%22../../hooks/usePensionData%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "a74392",
+        "hash": "8f637a4f",
+        "encoded": "import%20CustomerSwitcher%20from%20%22../ui/CustomerSwitcher%22;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "a74392",
+        "hash": "6b7618b2",
+        "encoded": "export%20default%20function%20DataPreview()%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "a74392",
+        "hash": "d8bb3bcb",
+        "encoded": "const%20%7B%20data,%20loading,%20error%20%7D%20=%20usePensionData(%7B",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "a74392",
+        "hash": "b41d7bf1",
+        "encoded": "ttlMs:%2060_000,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "a74392",
+        "hash": "ac1c6930",
+        "encoded": "retries:%202,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a74392",
+        "hash": "a64ae83d",
+        "encoded": "timeoutMs:%208_000",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a74392",
+        "hash": "a0290d90",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a74392",
+        "hash": "5cdca910",
+        "encoded": "const%20%5BselectedUserId,%20setSelectedUserId%5D%20=%20useState(%22%22);",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a74392",
+        "hash": "de192960",
+        "encoded": "const%20filteredSummaries%20=%20useMemo(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "a74392",
+        "hash": "05da3172",
+        "encoded": "if%20(!data)%20return%20%5B%5D;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a74392",
+        "hash": "8a7db4aa",
+        "encoded": "if%20(!selectedUserId)%20return%20data.accountSummaries;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "a74392",
+        "hash": "a3524949",
+        "encoded": "return%20data.accountSummaries.filter((a)%20=%3E%20a.userId%20===%20selectedUserId);",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a74392",
+        "hash": "8e43eb13",
+        "encoded": "%7D,%20%5Bdata,%20selectedUserId%5D);",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a74392",
+        "hash": "2d749916",
+        "encoded": "//%20Always%20render%20the%20dropdown;%20disable%20it%20until%20data%20is%20ready.",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a74392",
+        "hash": "9fb74b79",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a74392",
+        "hash": "00ac1ac6",
+        "encoded": "%3C%3E",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a74392",
+        "hash": "27ee041d",
+        "encoded": "%3CCustomerSwitcher",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a74392",
+        "hash": "b28cf777",
+        "encoded": "users=%7Bdata?.users%20%7C%7C%20%5B%5D%7D",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "a74392",
+        "hash": "ce3a1d54",
+        "encoded": "value=%7BselectedUserId%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "a74392",
+        "hash": "b3ffff99",
+        "encoded": "onChange=%7BsetSelectedUserId%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "a74392",
+        "hash": "c1795a09",
+        "encoded": "disabled=%7Bloading%20%7C%7C%20!!error%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "a74392",
+        "hash": "8248da2a",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "a74392",
+        "hash": "be391891",
+        "encoded": "%7Bloading%20&&%20(",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "a74392",
+        "hash": "3234a263",
+        "encoded": "%3Cdiv%20role=%22status%22%20aria-live=%22polite%22%20style=%7B%7B%20paddingTop:%2056%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "a74392",
+        "hash": "4a8ec83c",
+        "encoded": "Loading%20pension%20dataset%E2%80%A6",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "a74392",
+        "hash": "bda55a4e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "a74392",
+        "hash": "e1e5ac20",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "a74392",
+        "hash": "1f9325a3",
+        "encoded": "%7B!loading%20&&%20error%20&&%20(",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "a74392",
+        "hash": "400d4fdd",
+        "encoded": "%3Cdiv%20role=%22alert%22%20aria-live=%22assertive%22%20style=%7B%7B%20paddingTop:%2056%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "a74392",
+        "hash": "657f5b47",
+        "encoded": "Could%20not%20load%20dataset.%20Please%20try%20again.",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a74392",
+        "hash": "abeece6a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "a74392",
+        "hash": "dad3af47",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "a74392",
+        "hash": "21d65236",
+        "encoded": "%7B!loading%20&&%20!error%20&&%20data%20&&%20(",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "a74392",
+        "hash": "e50c487a",
+        "encoded": "%3Csection%20aria-labelledby=%22dataset-summary%22%20style=%7B%7B%20paddingTop:%2056%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "a74392",
+        "hash": "52607943",
+        "encoded": "%3Ch2%20id=%22dataset-summary%22%3EDataset%20summary%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "a74392",
+        "hash": "3266c8a9",
+        "encoded": "%3Cul%20aria-label=%22Overall%20dataset%20counts%22%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "a74392",
+        "hash": "ce024bfa",
+        "encoded": "%3Cli%3EUsers:%20%7Bdata.users.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "a74392",
+        "hash": "e30614b8",
+        "encoded": "%3Cli%3EProviders:%20%7Bdata.providers.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "a74392",
+        "hash": "d7b85e98",
+        "encoded": "%3Cli%3EAccounts:%20%7Bdata.accounts.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "a74392",
+        "hash": "1615701e",
+        "encoded": "%3Cli%3EFunds:%20%7Bdata.funds.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "a74392",
+        "hash": "85fad740",
+        "encoded": "%3Cli%3EHoldings:%20%7Bdata.holdings.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "a74392",
+        "hash": "6c32f13a",
+        "encoded": "%3Cli%3EContributions:%20%7Bdata.contributions.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "a74392",
+        "hash": "eee60d7d",
+        "encoded": "%3Cli%3ETransactions:%20%7Bdata.transactions.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "a74392",
+        "hash": "a74ce24c",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "a74392",
+        "hash": "df785573",
+        "encoded": "%3Ch3%3EAccounts%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "a74392",
+        "hash": "8948351f",
+        "encoded": "%3Cp%20aria-live=%22polite%22%3E",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "a74392",
+        "hash": "04bfac1d",
+        "encoded": "Showing%20%7BfilteredSummaries.length%7D%20of%20%7Bdata.accountSummaries.length%7D%20accounts",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "a74392",
+        "hash": "fcfd08eb",
+        "encoded": "%7BselectedUserId%20?%20%60%20for%20$%7Bdata.usersById%5BselectedUserId%5D?.fullName%20%7C%7C%20selectedUserId%7D%60%20:%20%22%22%7D.",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "a74392",
+        "hash": "6596aa0e",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "a74392",
+        "hash": "8f30dbe1",
+        "encoded": "%3Cdiv%20style=%7B%7B%20overflowX:%20%22auto%22%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "a74392",
+        "hash": "c24fd72f",
+        "encoded": "%3Ctable%20aria-label=%22Accounts%20overview%22%3E",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "a74392",
+        "hash": "09debd0a",
+        "encoded": "%3Cthead%3E",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "a74392",
+        "hash": "8046ff92",
+        "encoded": "%3Ctr%3E",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "a74392",
+        "hash": "8fdd27de",
+        "encoded": "%3Cth%20scope=%22col%22%3EAccount%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "a74392",
+        "hash": "71f54eee",
+        "encoded": "%3Cth%20scope=%22col%22%3EUser%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "a74392",
+        "hash": "f8722157",
+        "encoded": "%3Cth%20scope=%22col%22%3EProvider%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "a74392",
+        "hash": "507a6bc2",
+        "encoded": "%3Cth%20scope=%22col%22%3EBalance%20(GBP)%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "a74392",
+        "hash": "05c62409",
+        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%20Value%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "a74392",
+        "hash": "c99fe342",
+        "encoded": "%3Cth%20scope=%22col%22%3EDelta%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "a74392",
+        "hash": "a208802a",
+        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "a74392",
+        "hash": "934dadfb",
+        "encoded": "%3Cth%20scope=%22col%22%3EContrib%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "a74392",
+        "hash": "60bdc9f6",
+        "encoded": "%3Cth%20scope=%22col%22%3ETxns%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "a74392",
+        "hash": "324762b4",
+        "encoded": "%3C/tr%3E",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "a74392",
+        "hash": "e7f3e72d",
+        "encoded": "%3C/thead%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "a74392",
+        "hash": "8ffb310a",
+        "encoded": "%3Ctbody%3E",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "a74392",
+        "hash": "875b6f47",
+        "encoded": "%7BfilteredSummaries.map((a)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "a74392",
+        "hash": "61808ebb",
+        "encoded": "%3Ctr%20key=%7Ba.id%7D%3E",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "a74392",
+        "hash": "4e6a7243",
+        "encoded": "%3Ctd%3E%7Ba.accountNumber%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "a74392",
+        "hash": "fabbe450",
+        "encoded": "%3Ctd%3E%7Ba.userName%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "a74392",
+        "hash": "942b2eed",
+        "encoded": "%3Ctd%3E%7Ba.provider%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "a74392",
+        "hash": "3bb434bb",
+        "encoded": "%3Ctd%3E%7BNumber(a.balance).toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "a74392",
+        "hash": "7005cf5e",
+        "encoded": "%3Ctd%3E%7BNumber(a.holdingsValue).toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "a74392",
+        "hash": "20926c49",
+        "encoded": "%3Ctd%20style=%7B%7B%20color:%20a.balanceDelta%20===%200%20?%20%22inherit%22%20:%20%22crimson%22%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "a74392",
+        "hash": "ea6f67b7",
+        "encoded": "%7Ba.balanceDelta.toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "a74392",
+        "hash": "37dee08a",
+        "encoded": "%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "a74392",
+        "hash": "c80688e5",
+        "encoded": "%3Ctd%3E%7Ba.holdingsCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "a74392",
+        "hash": "30daf1a3",
+        "encoded": "%3Ctd%3E%7Ba.contributionCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "a74392",
+        "hash": "baaafad9",
+        "encoded": "%3Ctd%3E%7Ba.transactionCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "a74392",
+        "hash": "08e3631c",
+        "encoded": "%3C/tr%3E",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "a74392",
+        "hash": "16b0109e",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "a74392",
+        "hash": "76a754d7",
+        "encoded": "%3C/tbody%3E",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "a74392",
+        "hash": "f686fd6f",
+        "encoded": "%3C/table%3E",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "a74392",
+        "hash": "9fb7fb20",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "a74392",
+        "hash": "120ee26a",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "a74392",
+        "hash": "4161b7a5",
+        "encoded": "Note:%20Delta%20highlights%20any%20mismatch%20between%20recorded%20balance%20and%20sum%20of%20holdings%20for%20quick%20diagnostics.",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "a74392",
+        "hash": "c6bb8880",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "a74392",
+        "hash": "ae0df62e",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "a74392",
+        "hash": "dbb0109d",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "a74392",
+        "hash": "be50e31a",
+        "encoded": "%3C/%3E",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "a74392",
+        "hash": "6bd0d2bb",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "a74392",
+        "hash": "79409de0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
   }
 }

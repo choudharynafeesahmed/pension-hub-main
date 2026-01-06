@@ -1,25 +1,15 @@
 import { useMemo } from "react";
 import { useJson } from "./useJson";
-
-// Paths served from public/; same-origin, no auth required
-const PATHS = {
-  users: "/data/users.json",
-  providers: "/data/providers.json",
-  accounts: "/data/accounts.json",
-  funds: "/data/funds.json",
-  holdings: "/data/holdings.json",
-  contributions: "/data/contributions.json",
-  transactions: "/data/transactions.json"
-};
+import { resolveDataUrl } from "./dataConfig";
 
 export function usePensionData(options = {}) {
-  const users = useJson(PATHS.users, options);
-  const providers = useJson(PATHS.providers, options);
-  const accounts = useJson(PATHS.accounts, options);
-  const funds = useJson(PATHS.funds, options);
-  const holdings = useJson(PATHS.holdings, options);
-  const contributions = useJson(PATHS.contributions, options);
-  const transactions = useJson(PATHS.transactions, options);
+  const users = useJson(resolveDataUrl("users.json"), options);
+  const providers = useJson(resolveDataUrl("providers.json"), options);
+  const accounts = useJson(resolveDataUrl("accounts.json"), options);
+  const funds = useJson(resolveDataUrl("funds.json"), options);
+  const holdings = useJson(resolveDataUrl("holdings.json"), options);
+  const contributions = useJson(resolveDataUrl("contributions.json"), options);
+  const transactions = useJson(resolveDataUrl("transactions.json"), options);
 
   const loading =
     users.loading ||
@@ -53,7 +43,6 @@ export function usePensionData(options = {}) {
       return null;
     }
 
-    // Index helpers
     const byId = (arr) => Object.fromEntries(arr.map((x) => [x.id, x]));
     const groupBy = (arr, key) =>
       arr.reduce((m, it) => {
@@ -72,9 +61,8 @@ export function usePensionData(options = {}) {
     const contributionsByAccount = groupBy(contributions.data, "accountId");
     const transactionsByAccount = groupBy(transactions.data, "accountId");
 
-    // Derived: account summaries aligned with balances
     const accountSummaries = accounts.data.map((a) => {
-      const hs = (holdingsByAccount[a.id] || []);
+      const hs = holdingsByAccount[a.id] || [];
       const valueSum = hs.reduce((s, h) => s + Number(h.value || 0), 0);
       const delta = Number((Number(a.balance) - valueSum).toFixed(2));
       return {

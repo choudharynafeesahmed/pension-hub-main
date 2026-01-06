@@ -4,7 +4,7 @@ import CustomerSwitcher from "../ui/CustomerSwitcher";
 
 export default function DataPreview() {
   const { data, loading, error } = usePensionData({
-    ttlMs: 60_000, // cache for 1 minute
+    ttlMs: 60_000,
     retries: 2,
     timeoutMs: 8_000
   });
@@ -17,82 +17,87 @@ export default function DataPreview() {
     return data.accountSummaries.filter((a) => a.userId === selectedUserId);
   }, [data, selectedUserId]);
 
-  if (loading) {
-    return (
-      <div role="status" aria-live="polite">
-        Loading pension dataset…
-      </div>
-    );
-  }
-  if (error) {
-    return (
-      <div role="alert" aria-live="assertive">
-        Could not load dataset. Please try again.
-      </div>
-    );
-  }
-  if (!data) return null;
-
+  // Always render the dropdown; disable it until data is ready.
   return (
-    <section aria-labelledby="dataset-summary">
-      {/* Top-left customer switcher */}
-      <CustomerSwitcher users={data.users} value={selectedUserId} onChange={setSelectedUserId} />
+    <>
+      <CustomerSwitcher
+        users={data?.users || []}
+        value={selectedUserId}
+        onChange={setSelectedUserId}
+        disabled={loading || !!error}
+      />
 
-      <h2 id="dataset-summary">Dataset summary</h2>
+      {loading && (
+        <div role="status" aria-live="polite" style={{ paddingTop: 56 }}>
+          Loading pension dataset…
+        </div>
+      )}
 
-      <ul aria-label="Overall dataset counts">
-        <li>Users: {data.users.length}</li>
-        <li>Providers: {data.providers.length}</li>
-        <li>Accounts: {data.accounts.length}</li>
-        <li>Funds: {data.funds.length}</li>
-        <li>Holdings: {data.holdings.length}</li>
-        <li>Contributions: {data.contributions.length}</li>
-        <li>Transactions: {data.transactions.length}</li>
-      </ul>
+      {!loading && error && (
+        <div role="alert" aria-live="assertive" style={{ paddingTop: 56 }}>
+          Could not load dataset. Please try again.
+        </div>
+      )}
 
-      <h3>Accounts</h3>
-      <p aria-live="polite">
-        Showing {filteredSummaries.length} of {data.accountSummaries.length} accounts
-        {selectedUserId ? ` for ${data.usersById[selectedUserId]?.fullName || selectedUserId}` : ""}.
-      </p>
+      {!loading && !error && data && (
+        <section aria-labelledby="dataset-summary" style={{ paddingTop: 56 }}>
+          <h2 id="dataset-summary">Dataset summary</h2>
 
-      <div style={{ overflowX: "auto" }}>
-        <table aria-label="Accounts overview">
-          <thead>
-            <tr>
-              <th scope="col">Account</th>
-              <th scope="col">User</th>
-              <th scope="col">Provider</th>
-              <th scope="col">Balance (GBP)</th>
-              <th scope="col">Holdings Value</th>
-              <th scope="col">Delta</th>
-              <th scope="col">Holdings</th>
-              <th scope="col">Contrib</th>
-              <th scope="col">Txns</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredSummaries.map((a) => (
-              <tr key={a.id}>
-                <td>{a.accountNumber}</td>
-                <td>{a.userName}</td>
-                <td>{a.provider}</td>
-                <td>{Number(a.balance).toLocaleString("en-GB", { minimumFractionDigits: 2 })}</td>
-                <td>{Number(a.holdingsValue).toLocaleString("en-GB", { minimumFractionDigits: 2 })}</td>
-                <td style={{ color: a.balanceDelta === 0 ? "inherit" : "crimson" }}>
-                  {a.balanceDelta.toLocaleString("en-GB", { minimumFractionDigits: 2 })}
-                </td>
-                <td>{a.holdingsCount}</td>
-                <td>{a.contributionCount}</td>
-                <td>{a.transactionCount}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p>
-        Note: Delta highlights any mismatch between recorded balance and sum of holdings for quick diagnostics.
-      </p>
-    </section>
+          <ul aria-label="Overall dataset counts">
+            <li>Users: {data.users.length}</li>
+            <li>Providers: {data.providers.length}</li>
+            <li>Accounts: {data.accounts.length}</li>
+            <li>Funds: {data.funds.length}</li>
+            <li>Holdings: {data.holdings.length}</li>
+            <li>Contributions: {data.contributions.length}</li>
+            <li>Transactions: {data.transactions.length}</li>
+          </ul>
+
+          <h3>Accounts</h3>
+          <p aria-live="polite">
+            Showing {filteredSummaries.length} of {data.accountSummaries.length} accounts
+            {selectedUserId ? ` for ${data.usersById[selectedUserId]?.fullName || selectedUserId}` : ""}.
+          </p>
+
+          <div style={{ overflowX: "auto" }}>
+            <table aria-label="Accounts overview">
+              <thead>
+                <tr>
+                  <th scope="col">Account</th>
+                  <th scope="col">User</th>
+                  <th scope="col">Provider</th>
+                  <th scope="col">Balance (GBP)</th>
+                  <th scope="col">Holdings Value</th>
+                  <th scope="col">Delta</th>
+                  <th scope="col">Holdings</th>
+                  <th scope="col">Contrib</th>
+                  <th scope="col">Txns</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredSummaries.map((a) => (
+                  <tr key={a.id}>
+                    <td>{a.accountNumber}</td>
+                    <td>{a.userName}</td>
+                    <td>{a.provider}</td>
+                    <td>{Number(a.balance).toLocaleString("en-GB", { minimumFractionDigits: 2 })}</td>
+                    <td>{Number(a.holdingsValue).toLocaleString("en-GB", { minimumFractionDigits: 2 })}</td>
+                    <td style={{ color: a.balanceDelta === 0 ? "inherit" : "crimson" }}>
+                      {a.balanceDelta.toLocaleString("en-GB", { minimumFractionDigits: 2 })}
+                    </td>
+                    <td>{a.holdingsCount}</td>
+                    <td>{a.contributionCount}</td>
+                    <td>{a.transactionCount}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Note: Delta highlights any mismatch between recorded balance and sum of holdings for quick diagnostics.
+          </p>
+        </section>
+      )}
+    </>
   );
 }
