@@ -21,8 +21,8 @@
   },
   {
     "id": "acc3",
-    "userId": "u2",
-    "providerId": "pr1",
+    "userId": "u1",
+    "providerId": "pr3",
     "accountNumber": "FP-204411",
     "planType": "Defined Contribution",
     "startDate": "2018-11-15",
@@ -31,8 +31,8 @@
   },
   {
     "id": "acc4",
-    "userId": "u3",
-    "providerId": "pr2",
+    "userId": "u1",
+    "providerId": "pr4",
     "accountNumber": "SL-991144",
     "planType": "Defined Contribution",
     "startDate": "2014-05-10",

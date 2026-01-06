@@ -26,6 +26,5 @@ export function getDataBaseUrl() {
 }
 
 export function resolveDataUrl(fileName) {
-  const base = getDataBaseUrl();
-  return `${base}${fileName}`;
+  return `${getDataBaseUrl()}${fileName}`;
 }

@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useJson } from "./useJson";
 import { resolveDataUrl } from "./dataConfig";
 
+// CHANGE: Keep composition logic inside a memo; helpers defined inline for locality and tree-shaking.
 export function usePensionData(options = {}) {
   const users = useJson(resolveDataUrl("users.json"), options);
   const providers = useJson(resolveDataUrl("providers.json"), options);

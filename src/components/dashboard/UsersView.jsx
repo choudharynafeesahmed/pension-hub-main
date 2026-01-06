@@ -1,6 +1,12 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import { useJson } from "../../hooks/useJson";
 import { resolveDataUrl } from "../../hooks/dataConfig";
+
+// CHANGE: Hoist style to avoid re-creation.
+const ACTIONS_WRAP = { display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 };
+const ACTIONS_GROUP = { display: "flex", gap: 8 };
+const TABLE_WRAP = { overflowX: "auto" };
 
 /**
  * Renders user.json data as a table (robust to schema variations).
@@ -33,15 +39,14 @@ export default function UsersView() {
       ...preferred.filter((k) => seen.has(k)),
       ...discovered.filter((k) => !preferred.includes(k))
     ];
-    // Cap columns to keep UI readable
     return ordered.slice(0, 8);
   }, [items]);
 
   return (
     <section aria-labelledby="users-heading">
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
+      <div style={ACTIONS_WRAP}>
         <h2 id="users-heading">Users</h2>
-        <div role="group" aria-label="Users actions" style={{ display: "flex", gap: 8 }}>
+        <div role="group" aria-label="Users actions" style={ACTIONS_GROUP}>
           <button type="button" onClick={reload} disabled={loading} aria-disabled={loading}>
             Reload
           </button>
@@ -60,18 +65,18 @@ export default function UsersView() {
         </div>
       )}
 
-      {!loading && !error && items.length === 0 && (
-        <p aria-live="polite">No users to display.</p>
-      )}
+      {!loading && !error && items.length === 0 && <p aria-live="polite">No users to display.</p>}
 
       {!loading && !error && items.length > 0 && (
-        <div style={{ overflowX: "auto" }}>
+        <div style={TABLE_WRAP}>
           <table aria-label="Users table">
             <caption className="sr-only">Users</caption>
             <thead>
               <tr>
                 {columns.map((c) => (
-                  <th key={c} scope="col">{c}</th>
+                  <th key={c} scope="col">
+                    {c}
+                  </th>
                 ))}
               </tr>
             </thead>
@@ -98,3 +103,6 @@ export default function UsersView() {
     </section>
   );
 }
+
+// CHANGE: Validate props if later extended; currently no props.
+UsersView.propTypes = {};

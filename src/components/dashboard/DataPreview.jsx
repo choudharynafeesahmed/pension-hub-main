@@ -2,6 +2,10 @@ import React, { useMemo, useState } from "react";
 import { usePensionData } from "../../hooks/usePensionData";
 import CustomerSwitcher from "../ui/CustomerSwitcher";
 
+// Hoisted styles to avoid re-creation each render
+const FIXED_OFFSET_STYLE = { paddingTop: 56 };
+const TABLE_WRAP_STYLE = { overflowX: "auto" };
+
 export default function DataPreview() {
   const { data, loading, error } = usePensionData({
     ttlMs: 60_000,
@@ -9,6 +13,7 @@ export default function DataPreview() {
     timeoutMs: 8_000
   });
 
+  // Local selection state (no global context)
   const [selectedUserId, setSelectedUserId] = useState("");
 
   const filteredSummaries = useMemo(() => {
@@ -17,9 +22,15 @@ export default function DataPreview() {
     return data.accountSummaries.filter((a) => a.userId === selectedUserId);
   }, [data, selectedUserId]);
 
-  // Always render the dropdown; disable it until data is ready.
+  // Stable number formatter
+  const nf = useMemo(
+    () => new Intl.NumberFormat("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
+    []
+  );
+
   return (
     <>
+      {/* Top-left customer filter, always rendered; disabled while loading/error */}
       <CustomerSwitcher
         users={data?.users || []}
         value={selectedUserId}
@@ -28,19 +39,19 @@ export default function DataPreview() {
       />
 
       {loading && (
-        <div role="status" aria-live="polite" style={{ paddingTop: 56 }}>
+        <div role="status" aria-live="polite" style={FIXED_OFFSET_STYLE}>
           Loading pension dataset…
         </div>
       )}
 
       {!loading && error && (
-        <div role="alert" aria-live="assertive" style={{ paddingTop: 56 }}>
+        <div role="alert" aria-live="assertive" style={FIXED_OFFSET_STYLE}>
           Could not load dataset. Please try again.
         </div>
       )}
 
       {!loading && !error && data && (
-        <section aria-labelledby="dataset-summary" style={{ paddingTop: 56 }}>
+        <section aria-labelledby="dataset-summary" style={FIXED_OFFSET_STYLE}>
           <h2 id="dataset-summary">Dataset summary</h2>
 
           <ul aria-label="Overall dataset counts">
@@ -59,7 +70,7 @@ export default function DataPreview() {
             {selectedUserId ? ` for ${data.usersById[selectedUserId]?.fullName || selectedUserId}` : ""}.
           </p>
 
-          <div style={{ overflowX: "auto" }}>
+          <div style={TABLE_WRAP_STYLE}>
             <table aria-label="Accounts overview">
               <thead>
                 <tr>
@@ -80,10 +91,10 @@ export default function DataPreview() {
                     <td>{a.accountNumber}</td>
                     <td>{a.userName}</td>
                     <td>{a.provider}</td>
-                    <td>{Number(a.balance).toLocaleString("en-GB", { minimumFractionDigits: 2 })}</td>
-                    <td>{Number(a.holdingsValue).toLocaleString("en-GB", { minimumFractionDigits: 2 })}</td>
+                    <td>{nf.format(Number(a.balance))}</td>
+                    <td>{nf.format(Number(a.holdingsValue))}</td>
                     <td style={{ color: a.balanceDelta === 0 ? "inherit" : "crimson" }}>
-                      {a.balanceDelta.toLocaleString("en-GB", { minimumFractionDigits: 2 })}
+                      {nf.format(Number(a.balanceDelta))}
                     </td>
                     <td>{a.holdingsCount}</td>
                     <td>{a.contributionCount}</td>
@@ -93,9 +104,7 @@ export default function DataPreview() {
               </tbody>
             </table>
           </div>
-          <p>
-            Note: Delta highlights any mismatch between recorded balance and sum of holdings for quick diagnostics.
-          </p>
+          <p>Note: Delta highlights any mismatch between recorded balance and sum of holdings for quick diagnostics.</p>
         </section>
       )}
     </>

@@ -30,565 +30,635 @@
         "hash": "4619a71b",
         "messageId": "system_2ab42580-eafd-11f0-892e-6958aea9d7ac",
         "codeBlockId": "system_2ab42580-eafd-11f0-892e-6958aea9d7ac-Codeblock-2",
+        "isActive": false
+      },
+      "40ae64": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767708720,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "pasteCode",
+        "hash": "f406641b",
+        "messageId": "system_362eb580-eb05-11f0-892e-6958aea9d7ac",
+        "codeBlockId": "system_362eb580-eb05-11f0-892e-6958aea9d7ac-Codeblock-2",
+        "isActive": false
+      },
+      "85b736": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767709811,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "pasteCode",
+        "hash": "9477e62c",
+        "messageId": "system_bfcf8020-eb0b-11f0-892e-6958aea9d7ac",
+        "codeBlockId": "system_bfcf8020-eb0b-11f0-892e-6958aea9d7ac-Codeblock-1",
         "isActive": true
       }
     },
     "lines": {
       "0": {
-        "chunkId": "a74392",
+        "chunkId": "85b736",
         "hash": "168722db",
         "encoded": "import%20React,%20%7B%20useMemo,%20useState%20%7D%20from%20%22react%22;",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "a74392",
+        "chunkId": "85b736",
         "hash": "07afccb4",
         "encoded": "import%20%7B%20usePensionData%20%7D%20from%20%22../../hooks/usePensionData%22;",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "a74392",
+        "chunkId": "85b736",
         "hash": "8f637a4f",
         "encoded": "import%20CustomerSwitcher%20from%20%22../ui/CustomerSwitcher%22;",
         "prevChunkIds": []
       },
       "4": {
-        "chunkId": "a74392",
-        "hash": "6b7618b2",
-        "encoded": "export%20default%20function%20DataPreview()%20%7B",
+        "chunkId": "85b736",
+        "hash": "312ca18d",
+        "encoded": "//%20Hoisted%20styles%20to%20avoid%20re-creation%20each%20render",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "a74392",
-        "hash": "d8bb3bcb",
-        "encoded": "const%20%7B%20data,%20loading,%20error%20%7D%20=%20usePensionData(%7B",
+        "chunkId": "85b736",
+        "hash": "ecc4b2cb",
+        "encoded": "const%20FIXED_OFFSET_STYLE%20=%20%7B%20paddingTop:%2056%20%7D;",
         "prevChunkIds": []
       },
       "6": {
-        "chunkId": "a74392",
-        "hash": "b41d7bf1",
-        "encoded": "ttlMs:%2060_000,",
-        "prevChunkIds": []
-      },
-      "7": {
-        "chunkId": "a74392",
-        "hash": "ac1c6930",
-        "encoded": "retries:%202,",
+        "chunkId": "85b736",
+        "hash": "3f2fb254",
+        "encoded": "const%20TABLE_WRAP_STYLE%20=%20%7B%20overflowX:%20%22auto%22%20%7D;",
         "prevChunkIds": []
       },
       "8": {
-        "chunkId": "a74392",
-        "hash": "a64ae83d",
-        "encoded": "timeoutMs:%208_000",
+        "chunkId": "85b736",
+        "hash": "30612fe8",
+        "encoded": "export%20default%20function%20DataPreview()%20%7B",
         "prevChunkIds": []
       },
       "9": {
-        "chunkId": "a74392",
-        "hash": "a0290d90",
-        "encoded": "%7D);",
+        "chunkId": "85b736",
+        "hash": "5ceaa5b4",
+        "encoded": "const%20%7B%20data,%20loading,%20error%20%7D%20=%20usePensionData(%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "85b736",
+        "hash": "b3d859f9",
+        "encoded": "ttlMs:%2060_000,",
         "prevChunkIds": []
       },
       "11": {
-        "chunkId": "a74392",
-        "hash": "5cdca910",
-        "encoded": "const%20%5BselectedUserId,%20setSelectedUserId%5D%20=%20useState(%22%22);",
+        "chunkId": "85b736",
+        "hash": "d32228de",
+        "encoded": "retries:%202,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "85b736",
+        "hash": "84f1e1f5",
+        "encoded": "timeoutMs:%208_000",
         "prevChunkIds": []
       },
       "13": {
-        "chunkId": "a74392",
-        "hash": "de192960",
-        "encoded": "const%20filteredSummaries%20=%20useMemo(()%20=%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "14": {
-        "chunkId": "a74392",
-        "hash": "05da3172",
-        "encoded": "if%20(!data)%20return%20%5B%5D;",
+        "chunkId": "85b736",
+        "hash": "b83e12be",
+        "encoded": "%7D);",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "a74392",
-        "hash": "8a7db4aa",
-        "encoded": "if%20(!selectedUserId)%20return%20data.accountSummaries;",
+        "chunkId": "85b736",
+        "hash": "0f7f51bf",
+        "encoded": "//%20Local%20selection%20state%20(no%20global%20context)",
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "a74392",
-        "hash": "a3524949",
-        "encoded": "return%20data.accountSummaries.filter((a)%20=%3E%20a.userId%20===%20selectedUserId);",
+        "chunkId": "85b736",
+        "hash": "47895606",
+        "encoded": "const%20%5BselectedUserId,%20setSelectedUserId%5D%20=%20useState(%22%22);",
         "prevChunkIds": []
       },
-      "17": {
-        "chunkId": "a74392",
-        "hash": "8e43eb13",
-        "encoded": "%7D,%20%5Bdata,%20selectedUserId%5D);",
+      "18": {
+        "chunkId": "85b736",
+        "hash": "8e783cec",
+        "encoded": "const%20filteredSummaries%20=%20useMemo(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "19": {
-        "chunkId": "a74392",
-        "hash": "2d749916",
-        "encoded": "//%20Always%20render%20the%20dropdown;%20disable%20it%20until%20data%20is%20ready.",
+        "chunkId": "85b736",
+        "hash": "1c10dc2b",
+        "encoded": "if%20(!data)%20return%20%5B%5D;",
         "prevChunkIds": []
       },
       "20": {
-        "chunkId": "a74392",
-        "hash": "9fb74b79",
-        "encoded": "return%20(",
+        "chunkId": "85b736",
+        "hash": "c4a12cf7",
+        "encoded": "if%20(!selectedUserId)%20return%20data.accountSummaries;",
         "prevChunkIds": []
       },
       "21": {
-        "chunkId": "a74392",
-        "hash": "00ac1ac6",
-        "encoded": "%3C%3E",
+        "chunkId": "85b736",
+        "hash": "90b9d008",
+        "encoded": "return%20data.accountSummaries.filter((a)%20=%3E%20a.userId%20===%20selectedUserId);",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "a74392",
-        "hash": "27ee041d",
-        "encoded": "%3CCustomerSwitcher",
-        "prevChunkIds": []
-      },
-      "23": {
-        "chunkId": "a74392",
-        "hash": "b28cf777",
-        "encoded": "users=%7Bdata?.users%20%7C%7C%20%5B%5D%7D",
+        "chunkId": "85b736",
+        "hash": "37380a6e",
+        "encoded": "%7D,%20%5Bdata,%20selectedUserId%5D);",
         "prevChunkIds": []
       },
       "24": {
-        "chunkId": "a74392",
-        "hash": "ce3a1d54",
-        "encoded": "value=%7BselectedUserId%7D",
+        "chunkId": "85b736",
+        "hash": "41bef434",
+        "encoded": "//%20Stable%20number%20formatter",
         "prevChunkIds": []
       },
       "25": {
-        "chunkId": "a74392",
-        "hash": "b3ffff99",
-        "encoded": "onChange=%7BsetSelectedUserId%7D",
+        "chunkId": "85b736",
+        "hash": "9680104f",
+        "encoded": "const%20nf%20=%20useMemo(",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "a74392",
-        "hash": "c1795a09",
-        "encoded": "disabled=%7Bloading%20%7C%7C%20!!error%7D",
+        "chunkId": "85b736",
+        "hash": "1c7c75fd",
+        "encoded": "()%20=%3E%20new%20Intl.NumberFormat(%22en-GB%22,%20%7B%20minimumFractionDigits:%202,%20maximumFractionDigits:%202%20%7D),",
         "prevChunkIds": []
       },
       "27": {
-        "chunkId": "a74392",
-        "hash": "8248da2a",
-        "encoded": "/%3E",
+        "chunkId": "85b736",
+        "hash": "b027774a",
+        "encoded": "%5B%5D",
         "prevChunkIds": []
       },
-      "29": {
-        "chunkId": "a74392",
-        "hash": "be391891",
-        "encoded": "%7Bloading%20&&%20(",
-        "prevChunkIds": []
-      },
-      "30": {
-        "chunkId": "a74392",
-        "hash": "3234a263",
-        "encoded": "%3Cdiv%20role=%22status%22%20aria-live=%22polite%22%20style=%7B%7B%20paddingTop:%2056%20%7D%7D%3E",
-        "prevChunkIds": []
-      },
-      "31": {
-        "chunkId": "a74392",
-        "hash": "4a8ec83c",
-        "encoded": "Loading%20pension%20dataset%E2%80%A6",
-        "prevChunkIds": []
-      },
-      "32": {
-        "chunkId": "a74392",
-        "hash": "bda55a4e",
-        "encoded": "%3C/div%3E",
-        "prevChunkIds": []
-      },
-      "33": {
-        "chunkId": "a74392",
-        "hash": "e1e5ac20",
-        "encoded": ")%7D",
-        "prevChunkIds": []
-      },
-      "35": {
-        "chunkId": "a74392",
-        "hash": "1f9325a3",
-        "encoded": "%7B!loading%20&&%20error%20&&%20(",
-        "prevChunkIds": []
-      },
-      "36": {
-        "chunkId": "a74392",
-        "hash": "400d4fdd",
-        "encoded": "%3Cdiv%20role=%22alert%22%20aria-live=%22assertive%22%20style=%7B%7B%20paddingTop:%2056%20%7D%7D%3E",
-        "prevChunkIds": []
-      },
-      "37": {
-        "chunkId": "a74392",
-        "hash": "657f5b47",
-        "encoded": "Could%20not%20load%20dataset.%20Please%20try%20again.",
-        "prevChunkIds": []
-      },
-      "38": {
-        "chunkId": "a74392",
-        "hash": "abeece6a",
-        "encoded": "%3C/div%3E",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "a74392",
-        "hash": "dad3af47",
-        "encoded": ")%7D",
-        "prevChunkIds": []
-      },
-      "41": {
-        "chunkId": "a74392",
-        "hash": "21d65236",
-        "encoded": "%7B!loading%20&&%20!error%20&&%20data%20&&%20(",
-        "prevChunkIds": []
-      },
-      "42": {
-        "chunkId": "a74392",
-        "hash": "e50c487a",
-        "encoded": "%3Csection%20aria-labelledby=%22dataset-summary%22%20style=%7B%7B%20paddingTop:%2056%20%7D%7D%3E",
-        "prevChunkIds": []
-      },
-      "43": {
-        "chunkId": "a74392",
-        "hash": "52607943",
-        "encoded": "%3Ch2%20id=%22dataset-summary%22%3EDataset%20summary%3C/h2%3E",
-        "prevChunkIds": []
-      },
-      "45": {
-        "chunkId": "a74392",
-        "hash": "3266c8a9",
-        "encoded": "%3Cul%20aria-label=%22Overall%20dataset%20counts%22%3E",
-        "prevChunkIds": []
-      },
-      "46": {
-        "chunkId": "a74392",
-        "hash": "ce024bfa",
-        "encoded": "%3Cli%3EUsers:%20%7Bdata.users.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "47": {
-        "chunkId": "a74392",
-        "hash": "e30614b8",
-        "encoded": "%3Cli%3EProviders:%20%7Bdata.providers.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "48": {
-        "chunkId": "a74392",
-        "hash": "d7b85e98",
-        "encoded": "%3Cli%3EAccounts:%20%7Bdata.accounts.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "49": {
-        "chunkId": "a74392",
-        "hash": "1615701e",
-        "encoded": "%3Cli%3EFunds:%20%7Bdata.funds.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "50": {
-        "chunkId": "a74392",
-        "hash": "85fad740",
-        "encoded": "%3Cli%3EHoldings:%20%7Bdata.holdings.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "51": {
-        "chunkId": "a74392",
-        "hash": "6c32f13a",
-        "encoded": "%3Cli%3EContributions:%20%7Bdata.contributions.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "52": {
-        "chunkId": "a74392",
-        "hash": "eee60d7d",
-        "encoded": "%3Cli%3ETransactions:%20%7Bdata.transactions.length%7D%3C/li%3E",
-        "prevChunkIds": []
-      },
-      "53": {
-        "chunkId": "a74392",
-        "hash": "a74ce24c",
-        "encoded": "%3C/ul%3E",
-        "prevChunkIds": []
-      },
-      "55": {
-        "chunkId": "a74392",
-        "hash": "df785573",
-        "encoded": "%3Ch3%3EAccounts%3C/h3%3E",
-        "prevChunkIds": []
-      },
-      "56": {
-        "chunkId": "a74392",
-        "hash": "8948351f",
-        "encoded": "%3Cp%20aria-live=%22polite%22%3E",
-        "prevChunkIds": []
-      },
-      "57": {
-        "chunkId": "a74392",
-        "hash": "04bfac1d",
-        "encoded": "Showing%20%7BfilteredSummaries.length%7D%20of%20%7Bdata.accountSummaries.length%7D%20accounts",
-        "prevChunkIds": []
-      },
-      "58": {
-        "chunkId": "a74392",
-        "hash": "fcfd08eb",
-        "encoded": "%7BselectedUserId%20?%20%60%20for%20$%7Bdata.usersById%5BselectedUserId%5D?.fullName%20%7C%7C%20selectedUserId%7D%60%20:%20%22%22%7D.",
-        "prevChunkIds": []
-      },
-      "59": {
-        "chunkId": "a74392",
-        "hash": "6596aa0e",
-        "encoded": "%3C/p%3E",
-        "prevChunkIds": []
-      },
-      "61": {
-        "chunkId": "a74392",
-        "hash": "8f30dbe1",
-        "encoded": "%3Cdiv%20style=%7B%7B%20overflowX:%20%22auto%22%20%7D%7D%3E",
-        "prevChunkIds": []
-      },
-      "62": {
-        "chunkId": "a74392",
-        "hash": "c24fd72f",
-        "encoded": "%3Ctable%20aria-label=%22Accounts%20overview%22%3E",
-        "prevChunkIds": []
-      },
-      "63": {
-        "chunkId": "a74392",
-        "hash": "09debd0a",
-        "encoded": "%3Cthead%3E",
-        "prevChunkIds": []
-      },
-      "64": {
-        "chunkId": "a74392",
-        "hash": "8046ff92",
-        "encoded": "%3Ctr%3E",
-        "prevChunkIds": []
-      },
-      "65": {
-        "chunkId": "a74392",
-        "hash": "8fdd27de",
-        "encoded": "%3Cth%20scope=%22col%22%3EAccount%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "66": {
-        "chunkId": "a74392",
-        "hash": "71f54eee",
-        "encoded": "%3Cth%20scope=%22col%22%3EUser%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "67": {
-        "chunkId": "a74392",
-        "hash": "f8722157",
-        "encoded": "%3Cth%20scope=%22col%22%3EProvider%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "68": {
-        "chunkId": "a74392",
-        "hash": "507a6bc2",
-        "encoded": "%3Cth%20scope=%22col%22%3EBalance%20(GBP)%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "69": {
-        "chunkId": "a74392",
-        "hash": "05c62409",
-        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%20Value%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "70": {
-        "chunkId": "a74392",
-        "hash": "c99fe342",
-        "encoded": "%3Cth%20scope=%22col%22%3EDelta%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "71": {
-        "chunkId": "a74392",
-        "hash": "a208802a",
-        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "72": {
-        "chunkId": "a74392",
-        "hash": "934dadfb",
-        "encoded": "%3Cth%20scope=%22col%22%3EContrib%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "73": {
-        "chunkId": "a74392",
-        "hash": "60bdc9f6",
-        "encoded": "%3Cth%20scope=%22col%22%3ETxns%3C/th%3E",
-        "prevChunkIds": []
-      },
-      "74": {
-        "chunkId": "a74392",
-        "hash": "324762b4",
-        "encoded": "%3C/tr%3E",
-        "prevChunkIds": []
-      },
-      "75": {
-        "chunkId": "a74392",
-        "hash": "e7f3e72d",
-        "encoded": "%3C/thead%3E",
-        "prevChunkIds": []
-      },
-      "76": {
-        "chunkId": "a74392",
-        "hash": "8ffb310a",
-        "encoded": "%3Ctbody%3E",
-        "prevChunkIds": []
-      },
-      "77": {
-        "chunkId": "a74392",
-        "hash": "875b6f47",
-        "encoded": "%7BfilteredSummaries.map((a)%20=%3E%20(",
-        "prevChunkIds": []
-      },
-      "78": {
-        "chunkId": "a74392",
-        "hash": "61808ebb",
-        "encoded": "%3Ctr%20key=%7Ba.id%7D%3E",
-        "prevChunkIds": []
-      },
-      "79": {
-        "chunkId": "a74392",
-        "hash": "4e6a7243",
-        "encoded": "%3Ctd%3E%7Ba.accountNumber%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "80": {
-        "chunkId": "a74392",
-        "hash": "fabbe450",
-        "encoded": "%3Ctd%3E%7Ba.userName%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "81": {
-        "chunkId": "a74392",
-        "hash": "942b2eed",
-        "encoded": "%3Ctd%3E%7Ba.provider%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "82": {
-        "chunkId": "a74392",
-        "hash": "3bb434bb",
-        "encoded": "%3Ctd%3E%7BNumber(a.balance).toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "83": {
-        "chunkId": "a74392",
-        "hash": "7005cf5e",
-        "encoded": "%3Ctd%3E%7BNumber(a.holdingsValue).toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "84": {
-        "chunkId": "a74392",
-        "hash": "20926c49",
-        "encoded": "%3Ctd%20style=%7B%7B%20color:%20a.balanceDelta%20===%200%20?%20%22inherit%22%20:%20%22crimson%22%20%7D%7D%3E",
-        "prevChunkIds": []
-      },
-      "85": {
-        "chunkId": "a74392",
-        "hash": "ea6f67b7",
-        "encoded": "%7Ba.balanceDelta.toLocaleString(%22en-GB%22,%20%7B%20minimumFractionDigits:%202%20%7D)%7D",
-        "prevChunkIds": []
-      },
-      "86": {
-        "chunkId": "a74392",
-        "hash": "37dee08a",
-        "encoded": "%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "87": {
-        "chunkId": "a74392",
-        "hash": "c80688e5",
-        "encoded": "%3Ctd%3E%7Ba.holdingsCount%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "88": {
-        "chunkId": "a74392",
-        "hash": "30daf1a3",
-        "encoded": "%3Ctd%3E%7Ba.contributionCount%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "89": {
-        "chunkId": "a74392",
-        "hash": "baaafad9",
-        "encoded": "%3Ctd%3E%7Ba.transactionCount%7D%3C/td%3E",
-        "prevChunkIds": []
-      },
-      "90": {
-        "chunkId": "a74392",
-        "hash": "08e3631c",
-        "encoded": "%3C/tr%3E",
-        "prevChunkIds": []
-      },
-      "91": {
-        "chunkId": "a74392",
-        "hash": "16b0109e",
-        "encoded": "))%7D",
-        "prevChunkIds": []
-      },
-      "92": {
-        "chunkId": "a74392",
-        "hash": "76a754d7",
-        "encoded": "%3C/tbody%3E",
-        "prevChunkIds": []
-      },
-      "93": {
-        "chunkId": "a74392",
-        "hash": "f686fd6f",
-        "encoded": "%3C/table%3E",
-        "prevChunkIds": []
-      },
-      "94": {
-        "chunkId": "a74392",
-        "hash": "9fb7fb20",
-        "encoded": "%3C/div%3E",
-        "prevChunkIds": []
-      },
-      "95": {
-        "chunkId": "a74392",
-        "hash": "120ee26a",
-        "encoded": "%3Cp%3E",
-        "prevChunkIds": []
-      },
-      "96": {
-        "chunkId": "a74392",
-        "hash": "4161b7a5",
-        "encoded": "Note:%20Delta%20highlights%20any%20mismatch%20between%20recorded%20balance%20and%20sum%20of%20holdings%20for%20quick%20diagnostics.",
-        "prevChunkIds": []
-      },
-      "97": {
-        "chunkId": "a74392",
-        "hash": "c6bb8880",
-        "encoded": "%3C/p%3E",
-        "prevChunkIds": []
-      },
-      "98": {
-        "chunkId": "a74392",
-        "hash": "ae0df62e",
-        "encoded": "%3C/section%3E",
-        "prevChunkIds": []
-      },
-      "99": {
-        "chunkId": "a74392",
-        "hash": "dbb0109d",
-        "encoded": ")%7D",
-        "prevChunkIds": []
-      },
-      "100": {
-        "chunkId": "a74392",
-        "hash": "be50e31a",
-        "encoded": "%3C/%3E",
-        "prevChunkIds": []
-      },
-      "101": {
-        "chunkId": "a74392",
-        "hash": "6bd0d2bb",
+      "28": {
+        "chunkId": "85b736",
+        "hash": "037b4cf2",
         "encoded": ");",
         "prevChunkIds": []
       },
+      "30": {
+        "chunkId": "85b736",
+        "hash": "e84d3cad",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "85b736",
+        "hash": "09e40da8",
+        "encoded": "%3C%3E",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "85b736",
+        "hash": "d9a72c43",
+        "encoded": "%7B/*%20Top-left%20customer%20filter,%20always%20rendered;%20disabled%20while%20loading/error%20*/%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "85b736",
+        "hash": "cd2a9157",
+        "encoded": "%3CCustomerSwitcher",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "85b736",
+        "hash": "1a3b3c2b",
+        "encoded": "users=%7Bdata?.users%20%7C%7C%20%5B%5D%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "85b736",
+        "hash": "a025efec",
+        "encoded": "value=%7BselectedUserId%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "85b736",
+        "hash": "32fad2c2",
+        "encoded": "onChange=%7BsetSelectedUserId%7D",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "85b736",
+        "hash": "2051b672",
+        "encoded": "disabled=%7Bloading%20%7C%7C%20!!error%7D",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "85b736",
+        "hash": "180df582",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "85b736",
+        "hash": "f6e16c32",
+        "encoded": "%7Bloading%20&&%20(",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "85b736",
+        "hash": "c1d3dfe4",
+        "encoded": "%3Cdiv%20role=%22status%22%20aria-live=%22polite%22%20style=%7BFIXED_OFFSET_STYLE%7D%3E",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "85b736",
+        "hash": "e9a0e76d",
+        "encoded": "Loading%20pension%20dataset%E2%80%A6",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "85b736",
+        "hash": "a9c8c8e2",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "85b736",
+        "hash": "812481b6",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "85b736",
+        "hash": "e197cfd0",
+        "encoded": "%7B!loading%20&&%20error%20&&%20(",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "85b736",
+        "hash": "49e5fc6e",
+        "encoded": "%3Cdiv%20role=%22alert%22%20aria-live=%22assertive%22%20style=%7BFIXED_OFFSET_STYLE%7D%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "85b736",
+        "hash": "81fdd3e7",
+        "encoded": "Could%20not%20load%20dataset.%20Please%20try%20again.",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "85b736",
+        "hash": "2be728bd",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "85b736",
+        "hash": "5d86c810",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "85b736",
+        "hash": "7bfb5533",
+        "encoded": "%7B!loading%20&&%20!error%20&&%20data%20&&%20(",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "85b736",
+        "hash": "5b50ec2f",
+        "encoded": "%3Csection%20aria-labelledby=%22dataset-summary%22%20style=%7BFIXED_OFFSET_STYLE%7D%3E",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "85b736",
+        "hash": "5b3fa319",
+        "encoded": "%3Ch2%20id=%22dataset-summary%22%3EDataset%20summary%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "85b736",
+        "hash": "d1344fdc",
+        "encoded": "%3Cul%20aria-label=%22Overall%20dataset%20counts%22%3E",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "85b736",
+        "hash": "7ac8b10f",
+        "encoded": "%3Cli%3EUsers:%20%7Bdata.users.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "85b736",
+        "hash": "d38064af",
+        "encoded": "%3Cli%3EProviders:%20%7Bdata.providers.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "85b736",
+        "hash": "922af30c",
+        "encoded": "%3Cli%3EAccounts:%20%7Bdata.accounts.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "85b736",
+        "hash": "43651412",
+        "encoded": "%3Cli%3EFunds:%20%7Bdata.funds.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "85b736",
+        "hash": "b432eb3f",
+        "encoded": "%3Cli%3EHoldings:%20%7Bdata.holdings.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "85b736",
+        "hash": "1953f817",
+        "encoded": "%3Cli%3EContributions:%20%7Bdata.contributions.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "85b736",
+        "hash": "6bb0a6be",
+        "encoded": "%3Cli%3ETransactions:%20%7Bdata.transactions.length%7D%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "85b736",
+        "hash": "a1f9a5be",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "85b736",
+        "hash": "2b814b21",
+        "encoded": "%3Ch3%3EAccounts%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "85b736",
+        "hash": "d9621b1d",
+        "encoded": "%3Cp%20aria-live=%22polite%22%3E",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "85b736",
+        "hash": "01cdd150",
+        "encoded": "Showing%20%7BfilteredSummaries.length%7D%20of%20%7Bdata.accountSummaries.length%7D%20accounts",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "85b736",
+        "hash": "c8dc60cb",
+        "encoded": "%7BselectedUserId%20?%20%60%20for%20$%7Bdata.usersById%5BselectedUserId%5D?.fullName%20%7C%7C%20selectedUserId%7D%60%20:%20%22%22%7D.",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "85b736",
+        "hash": "f7146e68",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "85b736",
+        "hash": "c5f5dc46",
+        "encoded": "%3Cdiv%20style=%7BTABLE_WRAP_STYLE%7D%3E",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "85b736",
+        "hash": "827f9575",
+        "encoded": "%3Ctable%20aria-label=%22Accounts%20overview%22%3E",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "85b736",
+        "hash": "8055ba08",
+        "encoded": "%3Cthead%3E",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "85b736",
+        "hash": "a6c7d271",
+        "encoded": "%3Ctr%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "85b736",
+        "hash": "1f9da21c",
+        "encoded": "%3Cth%20scope=%22col%22%3EAccount%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "85b736",
+        "hash": "6a243ad7",
+        "encoded": "%3Cth%20scope=%22col%22%3EUser%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "85b736",
+        "hash": "74051a9f",
+        "encoded": "%3Cth%20scope=%22col%22%3EProvider%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "85b736",
+        "hash": "5f68b1e6",
+        "encoded": "%3Cth%20scope=%22col%22%3EBalance%20(GBP)%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "85b736",
+        "hash": "f947a94e",
+        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%20Value%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "85b736",
+        "hash": "67d507aa",
+        "encoded": "%3Cth%20scope=%22col%22%3EDelta%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "85b736",
+        "hash": "5b357a05",
+        "encoded": "%3Cth%20scope=%22col%22%3EHoldings%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "85b736",
+        "hash": "ee91e488",
+        "encoded": "%3Cth%20scope=%22col%22%3EContrib%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "85b736",
+        "hash": "fb359de0",
+        "encoded": "%3Cth%20scope=%22col%22%3ETxns%3C/th%3E",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "85b736",
+        "hash": "d1d1349e",
+        "encoded": "%3C/tr%3E",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "85b736",
+        "hash": "7c0cb621",
+        "encoded": "%3C/thead%3E",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "85b736",
+        "hash": "9c29304e",
+        "encoded": "%3Ctbody%3E",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "85b736",
+        "hash": "e04e675b",
+        "encoded": "%7BfilteredSummaries.map((a)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "85b736",
+        "hash": "70deb134",
+        "encoded": "%3Ctr%20key=%7Ba.id%7D%3E",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "85b736",
+        "hash": "4d12e513",
+        "encoded": "%3Ctd%3E%7Ba.accountNumber%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "85b736",
+        "hash": "beebbe2c",
+        "encoded": "%3Ctd%3E%7Ba.userName%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "85b736",
+        "hash": "d1135bff",
+        "encoded": "%3Ctd%3E%7Ba.provider%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "85b736",
+        "hash": "8652d77d",
+        "encoded": "%3Ctd%3E%7Bnf.format(Number(a.balance))%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "85b736",
+        "hash": "67fee8fc",
+        "encoded": "%3Ctd%3E%7Bnf.format(Number(a.holdingsValue))%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "85b736",
+        "hash": "e226bd32",
+        "encoded": "%3Ctd%20style=%7B%7B%20color:%20a.balanceDelta%20===%200%20?%20%22inherit%22%20:%20%22crimson%22%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "85b736",
+        "hash": "40b772da",
+        "encoded": "%7Bnf.format(Number(a.balanceDelta))%7D",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "85b736",
+        "hash": "c63a4125",
+        "encoded": "%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "85b736",
+        "hash": "25ed2b4f",
+        "encoded": "%3Ctd%3E%7Ba.holdingsCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "85b736",
+        "hash": "9c7cfc35",
+        "encoded": "%3Ctd%3E%7Ba.contributionCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "85b736",
+        "hash": "f51201db",
+        "encoded": "%3Ctd%3E%7Ba.transactionCount%7D%3C/td%3E",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "85b736",
+        "hash": "0dc805e3",
+        "encoded": "%3C/tr%3E",
+        "prevChunkIds": []
+      },
       "102": {
-        "chunkId": "a74392",
-        "hash": "79409de0",
+        "chunkId": "85b736",
+        "hash": "006a8dd8",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "85b736",
+        "hash": "e77c4381",
+        "encoded": "%3C/tbody%3E",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "85b736",
+        "hash": "04f6fe50",
+        "encoded": "%3C/table%3E",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "85b736",
+        "hash": "af7f3939",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "85b736",
+        "hash": "5afb70d4",
+        "encoded": "%3Cp%3ENote:%20Delta%20highlights%20any%20mismatch%20between%20recorded%20balance%20and%20sum%20of%20holdings%20for%20quick%20diagnostics.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "85b736",
+        "hash": "cc17ad7e",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "85b736",
+        "hash": "e21e25de",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "85b736",
+        "hash": "eb290877",
+        "encoded": "%3C/%3E",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "85b736",
+        "hash": "c19f571c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "85b736",
+        "hash": "367981c3",
         "encoded": "%7D",
         "prevChunkIds": []
       }

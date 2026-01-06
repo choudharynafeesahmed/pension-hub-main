@@ -16,7 +16,7 @@
         "hash": "e6188a15",
         "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
         "codeBlockId": null,
-        "isActive": true
+        "isActive": false
       },
       "275d37": {
         "user": "Choudhary Nafees Ahmed",
@@ -30,601 +30,621 @@
         "hash": "081c0eec",
         "messageId": "system_e6c534a0-eafb-11f0-892e-6958aea9d7ac",
         "codeBlockId": "system_e6c534a0-eafb-11f0-892e-6958aea9d7ac-Codeblock-2",
+        "isActive": false
+      },
+      "d8228d": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767708816,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "pasteCode",
+        "hash": "91d22a99",
+        "messageId": "system_362eb580-eb05-11f0-892e-6958aea9d7ac",
+        "codeBlockId": "system_362eb580-eb05-11f0-892e-6958aea9d7ac-Codeblock-7",
         "isActive": true
       }
     },
     "lines": {
       "0": {
-        "chunkId": "618c82",
+        "chunkId": "d8228d",
         "hash": "857cd80b",
         "encoded": "import%20%7B%20useMemo%20%7D%20from%20%22react%22;",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "618c82",
+        "chunkId": "d8228d",
         "hash": "678e9231",
         "encoded": "import%20%7B%20useJson%20%7D%20from%20%22./useJson%22;",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "275d37",
+        "chunkId": "d8228d",
         "hash": "692375c2",
         "encoded": "import%20%7B%20resolveDataUrl%20%7D%20from%20%22./dataConfig%22;",
         "prevChunkIds": []
       },
       "4": {
-        "chunkId": "618c82",
-        "hash": "bc1afe9f",
-        "encoded": "export%20function%20usePensionData(options%20=%20%7B%7D)%20%7B",
+        "chunkId": "d8228d",
+        "hash": "22ef794f",
+        "encoded": "//%20CHANGE:%20Keep%20composition%20logic%20inside%20a%20memo;%20helpers%20defined%20inline%20for%20locality%20and%20tree-shaking.",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "275d37",
-        "hash": "6cd1bef7",
-        "encoded": "const%20users%20=%20useJson(resolveDataUrl(%22users.json%22),%20options);",
+        "chunkId": "d8228d",
+        "hash": "53e4f30e",
+        "encoded": "export%20function%20usePensionData(options%20=%20%7B%7D)%20%7B",
         "prevChunkIds": []
       },
       "6": {
-        "chunkId": "275d37",
-        "hash": "dd7c73e3",
-        "encoded": "const%20providers%20=%20useJson(resolveDataUrl(%22providers.json%22),%20options);",
+        "chunkId": "d8228d",
+        "hash": "93038fa6",
+        "encoded": "const%20users%20=%20useJson(resolveDataUrl(%22users.json%22),%20options);",
         "prevChunkIds": []
       },
       "7": {
-        "chunkId": "275d37",
-        "hash": "9d3c7ca6",
-        "encoded": "const%20accounts%20=%20useJson(resolveDataUrl(%22accounts.json%22),%20options);",
+        "chunkId": "d8228d",
+        "hash": "778b11f9",
+        "encoded": "const%20providers%20=%20useJson(resolveDataUrl(%22providers.json%22),%20options);",
         "prevChunkIds": []
       },
       "8": {
-        "chunkId": "275d37",
-        "hash": "6a8c4d0d",
-        "encoded": "const%20funds%20=%20useJson(resolveDataUrl(%22funds.json%22),%20options);",
+        "chunkId": "d8228d",
+        "hash": "a97c5fc0",
+        "encoded": "const%20accounts%20=%20useJson(resolveDataUrl(%22accounts.json%22),%20options);",
         "prevChunkIds": []
       },
       "9": {
-        "chunkId": "275d37",
-        "hash": "f5525906",
-        "encoded": "const%20holdings%20=%20useJson(resolveDataUrl(%22holdings.json%22),%20options);",
+        "chunkId": "d8228d",
+        "hash": "f17c4407",
+        "encoded": "const%20funds%20=%20useJson(resolveDataUrl(%22funds.json%22),%20options);",
         "prevChunkIds": []
       },
       "10": {
-        "chunkId": "275d37",
-        "hash": "8d75ad18",
-        "encoded": "const%20contributions%20=%20useJson(resolveDataUrl(%22contributions.json%22),%20options);",
+        "chunkId": "d8228d",
+        "hash": "285fd89f",
+        "encoded": "const%20holdings%20=%20useJson(resolveDataUrl(%22holdings.json%22),%20options);",
         "prevChunkIds": []
       },
       "11": {
-        "chunkId": "275d37",
-        "hash": "dbbe532f",
+        "chunkId": "d8228d",
+        "hash": "207fcf5a",
+        "encoded": "const%20contributions%20=%20useJson(resolveDataUrl(%22contributions.json%22),%20options);",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "d8228d",
+        "hash": "49bdefe6",
         "encoded": "const%20transactions%20=%20useJson(resolveDataUrl(%22transactions.json%22),%20options);",
         "prevChunkIds": []
       },
-      "13": {
-        "chunkId": "618c82",
-        "hash": "e70ee22e",
+      "14": {
+        "chunkId": "d8228d",
+        "hash": "a9cc2408",
         "encoded": "const%20loading%20=",
         "prevChunkIds": []
       },
-      "14": {
-        "chunkId": "618c82",
-        "hash": "24f7500f",
+      "15": {
+        "chunkId": "d8228d",
+        "hash": "a3c23679",
         "encoded": "users.loading%20%7C%7C",
         "prevChunkIds": []
       },
-      "15": {
-        "chunkId": "618c82",
-        "hash": "b3ecaea3",
+      "16": {
+        "chunkId": "d8228d",
+        "hash": "c793d41c",
         "encoded": "providers.loading%20%7C%7C",
         "prevChunkIds": []
       },
-      "16": {
-        "chunkId": "618c82",
-        "hash": "06e12b2d",
+      "17": {
+        "chunkId": "d8228d",
+        "hash": "74e02591",
         "encoded": "accounts.loading%20%7C%7C",
         "prevChunkIds": []
       },
-      "17": {
-        "chunkId": "618c82",
-        "hash": "1498e884",
+      "18": {
+        "chunkId": "d8228d",
+        "hash": "ecf30128",
         "encoded": "funds.loading%20%7C%7C",
         "prevChunkIds": []
       },
-      "18": {
-        "chunkId": "618c82",
-        "hash": "ecd26a17",
+      "19": {
+        "chunkId": "d8228d",
+        "hash": "a525399e",
         "encoded": "holdings.loading%20%7C%7C",
         "prevChunkIds": []
       },
-      "19": {
-        "chunkId": "618c82",
-        "hash": "0fd69aa4",
+      "20": {
+        "chunkId": "d8228d",
+        "hash": "05cb33ef",
         "encoded": "contributions.loading%20%7C%7C",
         "prevChunkIds": []
       },
-      "20": {
-        "chunkId": "618c82",
-        "hash": "a4cd6921",
+      "21": {
+        "chunkId": "d8228d",
+        "hash": "4e1b33f8",
         "encoded": "transactions.loading;",
         "prevChunkIds": []
       },
-      "22": {
-        "chunkId": "618c82",
-        "hash": "39263f23",
+      "23": {
+        "chunkId": "d8228d",
+        "hash": "0cf204ed",
         "encoded": "const%20error%20=",
         "prevChunkIds": []
       },
-      "23": {
-        "chunkId": "618c82",
-        "hash": "70e1994c",
+      "24": {
+        "chunkId": "d8228d",
+        "hash": "b4b56cc0",
         "encoded": "users.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "24": {
-        "chunkId": "618c82",
-        "hash": "12a11ab8",
+      "25": {
+        "chunkId": "d8228d",
+        "hash": "b66615aa",
         "encoded": "providers.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "25": {
-        "chunkId": "618c82",
-        "hash": "6396f92f",
+      "26": {
+        "chunkId": "d8228d",
+        "hash": "53e84d6e",
         "encoded": "accounts.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "26": {
-        "chunkId": "618c82",
-        "hash": "c75af315",
+      "27": {
+        "chunkId": "d8228d",
+        "hash": "2d5d45fe",
         "encoded": "funds.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "27": {
-        "chunkId": "618c82",
-        "hash": "b9e78dfa",
+      "28": {
+        "chunkId": "d8228d",
+        "hash": "99815bb3",
         "encoded": "holdings.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "28": {
-        "chunkId": "618c82",
-        "hash": "f4543239",
+      "29": {
+        "chunkId": "d8228d",
+        "hash": "3fefddea",
         "encoded": "contributions.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "29": {
-        "chunkId": "618c82",
-        "hash": "68221ada",
+      "30": {
+        "chunkId": "d8228d",
+        "hash": "b33ce775",
         "encoded": "transactions.error%20%7C%7C",
         "prevChunkIds": []
       },
-      "30": {
-        "chunkId": "618c82",
-        "hash": "2e7b9cd5",
+      "31": {
+        "chunkId": "d8228d",
+        "hash": "c381feff",
         "encoded": "null;",
         "prevChunkIds": []
       },
-      "32": {
-        "chunkId": "618c82",
-        "hash": "70ab3606",
+      "33": {
+        "chunkId": "d8228d",
+        "hash": "f716294c",
         "encoded": "const%20data%20=%20useMemo(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "33": {
-        "chunkId": "618c82",
-        "hash": "fd4da8da",
+      "34": {
+        "chunkId": "d8228d",
+        "hash": "2c430659",
         "encoded": "if%20(",
         "prevChunkIds": []
       },
-      "34": {
-        "chunkId": "618c82",
-        "hash": "a2a02b97",
+      "35": {
+        "chunkId": "d8228d",
+        "hash": "8a065f12",
         "encoded": "!users.data%20%7C%7C",
         "prevChunkIds": []
       },
-      "35": {
-        "chunkId": "618c82",
-        "hash": "b4bcd0d8",
+      "36": {
+        "chunkId": "d8228d",
+        "hash": "71ed080d",
         "encoded": "!providers.data%20%7C%7C",
         "prevChunkIds": []
       },
-      "36": {
-        "chunkId": "618c82",
-        "hash": "1543d983",
+      "37": {
+        "chunkId": "d8228d",
+        "hash": "09b62707",
         "encoded": "!accounts.data%20%7C%7C",
         "prevChunkIds": []
       },
-      "37": {
-        "chunkId": "618c82",
-        "hash": "5189bcce",
+      "38": {
+        "chunkId": "d8228d",
+        "hash": "bb821523",
         "encoded": "!funds.data%20%7C%7C",
         "prevChunkIds": []
       },
-      "38": {
-        "chunkId": "618c82",
-        "hash": "7932e782",
+      "39": {
+        "chunkId": "d8228d",
+        "hash": "df378829",
         "encoded": "!holdings.data%20%7C%7C",
         "prevChunkIds": []
       },
-      "39": {
-        "chunkId": "618c82",
-        "hash": "6332d7d1",
+      "40": {
+        "chunkId": "d8228d",
+        "hash": "a6891e71",
         "encoded": "!contributions.data%20%7C%7C",
         "prevChunkIds": []
       },
-      "40": {
-        "chunkId": "618c82",
-        "hash": "7ea31fb3",
+      "41": {
+        "chunkId": "d8228d",
+        "hash": "fa15027d",
         "encoded": "!transactions.data",
         "prevChunkIds": []
       },
-      "41": {
-        "chunkId": "618c82",
-        "hash": "9b066ee9",
+      "42": {
+        "chunkId": "d8228d",
+        "hash": "e8b2e24f",
         "encoded": ")%20%7B",
         "prevChunkIds": []
       },
-      "42": {
-        "chunkId": "618c82",
-        "hash": "905b80b8",
+      "43": {
+        "chunkId": "d8228d",
+        "hash": "08df6f15",
         "encoded": "return%20null;",
         "prevChunkIds": []
       },
-      "43": {
-        "chunkId": "618c82",
-        "hash": "d6071ac7",
+      "44": {
+        "chunkId": "d8228d",
+        "hash": "5046e502",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "45": {
-        "chunkId": "618c82",
-        "hash": "7fb28e0e",
+      "46": {
+        "chunkId": "d8228d",
+        "hash": "ea298e36",
         "encoded": "const%20byId%20=%20(arr)%20=%3E%20Object.fromEntries(arr.map((x)%20=%3E%20%5Bx.id,%20x%5D));",
         "prevChunkIds": []
       },
-      "46": {
-        "chunkId": "618c82",
-        "hash": "9d0df625",
+      "47": {
+        "chunkId": "d8228d",
+        "hash": "499007f3",
         "encoded": "const%20groupBy%20=%20(arr,%20key)%20=%3E",
         "prevChunkIds": []
       },
-      "47": {
-        "chunkId": "618c82",
-        "hash": "fbd961fe",
+      "48": {
+        "chunkId": "d8228d",
+        "hash": "d4ef5a5a",
         "encoded": "arr.reduce((m,%20it)%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "48": {
-        "chunkId": "618c82",
-        "hash": "ad6d647c",
+      "49": {
+        "chunkId": "d8228d",
+        "hash": "89e7da4b",
         "encoded": "const%20k%20=%20it%5Bkey%5D;",
         "prevChunkIds": []
       },
-      "49": {
-        "chunkId": "618c82",
-        "hash": "a09fdf8c",
+      "50": {
+        "chunkId": "d8228d",
+        "hash": "c971ea9a",
         "encoded": "(m%5Bk%5D%20%7C%7C=%20%5B%5D).push(it);",
         "prevChunkIds": []
       },
-      "50": {
-        "chunkId": "618c82",
-        "hash": "c5dcab4c",
+      "51": {
+        "chunkId": "d8228d",
+        "hash": "8afb8174",
         "encoded": "return%20m;",
         "prevChunkIds": []
       },
-      "51": {
-        "chunkId": "618c82",
-        "hash": "d3c12510",
+      "52": {
+        "chunkId": "d8228d",
+        "hash": "34ad4c5c",
         "encoded": "%7D,%20%7B%7D);",
         "prevChunkIds": []
       },
-      "53": {
-        "chunkId": "618c82",
-        "hash": "44d55cec",
+      "54": {
+        "chunkId": "d8228d",
+        "hash": "29d10e7d",
         "encoded": "const%20usersById%20=%20byId(users.data);",
         "prevChunkIds": []
       },
-      "54": {
-        "chunkId": "618c82",
-        "hash": "d0fcb7aa",
+      "55": {
+        "chunkId": "d8228d",
+        "hash": "e55f8a69",
         "encoded": "const%20providersById%20=%20byId(providers.data);",
         "prevChunkIds": []
       },
-      "55": {
-        "chunkId": "618c82",
-        "hash": "60c1147d",
+      "56": {
+        "chunkId": "d8228d",
+        "hash": "37f42672",
         "encoded": "const%20accountsById%20=%20byId(accounts.data);",
         "prevChunkIds": []
       },
-      "56": {
-        "chunkId": "618c82",
-        "hash": "40c7a5dc",
+      "57": {
+        "chunkId": "d8228d",
+        "hash": "822999a7",
         "encoded": "const%20fundsById%20=%20byId(funds.data);",
         "prevChunkIds": []
       },
-      "58": {
-        "chunkId": "618c82",
-        "hash": "88fc106f",
+      "59": {
+        "chunkId": "d8228d",
+        "hash": "4ae74172",
         "encoded": "const%20accountsByUser%20=%20groupBy(accounts.data,%20%22userId%22);",
         "prevChunkIds": []
       },
-      "59": {
-        "chunkId": "618c82",
-        "hash": "4470de03",
+      "60": {
+        "chunkId": "d8228d",
+        "hash": "fe0f2031",
         "encoded": "const%20holdingsByAccount%20=%20groupBy(holdings.data,%20%22accountId%22);",
         "prevChunkIds": []
       },
-      "60": {
-        "chunkId": "618c82",
-        "hash": "57d8ea06",
+      "61": {
+        "chunkId": "d8228d",
+        "hash": "f8483a6b",
         "encoded": "const%20contributionsByAccount%20=%20groupBy(contributions.data,%20%22accountId%22);",
         "prevChunkIds": []
       },
-      "61": {
-        "chunkId": "618c82",
-        "hash": "823f6922",
+      "62": {
+        "chunkId": "d8228d",
+        "hash": "755f1837",
         "encoded": "const%20transactionsByAccount%20=%20groupBy(transactions.data,%20%22accountId%22);",
         "prevChunkIds": []
       },
-      "63": {
-        "chunkId": "618c82",
-        "hash": "1a0c78f3",
+      "64": {
+        "chunkId": "d8228d",
+        "hash": "6a35c6f2",
         "encoded": "const%20accountSummaries%20=%20accounts.data.map((a)%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "64": {
-        "chunkId": "275d37",
-        "hash": "f4c9fc15",
+      "65": {
+        "chunkId": "d8228d",
+        "hash": "6e4f1683",
         "encoded": "const%20hs%20=%20holdingsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D;",
         "prevChunkIds": []
       },
-      "65": {
-        "chunkId": "618c82",
-        "hash": "b5c7cccd",
+      "66": {
+        "chunkId": "d8228d",
+        "hash": "483070a5",
         "encoded": "const%20valueSum%20=%20hs.reduce((s,%20h)%20=%3E%20s%20+%20Number(h.value%20%7C%7C%200),%200);",
         "prevChunkIds": []
       },
-      "66": {
-        "chunkId": "618c82",
-        "hash": "de0d3002",
+      "67": {
+        "chunkId": "d8228d",
+        "hash": "1bfc4b3e",
         "encoded": "const%20delta%20=%20Number((Number(a.balance)%20-%20valueSum).toFixed(2));",
         "prevChunkIds": []
       },
-      "67": {
-        "chunkId": "618c82",
-        "hash": "ae5b5de5",
-        "encoded": "return%20%7B",
-        "prevChunkIds": []
-      },
       "68": {
-        "chunkId": "618c82",
-        "hash": "bfd13d04",
-        "encoded": "...a,",
+        "chunkId": "d8228d",
+        "hash": "ea493d28",
+        "encoded": "return%20%7B",
         "prevChunkIds": []
       },
       "69": {
-        "chunkId": "618c82",
-        "hash": "bdb0913c",
-        "encoded": "provider:%20providersById%5Ba.providerId%5D?.name%20%7C%7C%20a.providerId,",
+        "chunkId": "d8228d",
+        "hash": "4900fae5",
+        "encoded": "...a,",
         "prevChunkIds": []
       },
       "70": {
-        "chunkId": "618c82",
-        "hash": "25977c94",
-        "encoded": "userName:%20usersById%5Ba.userId%5D?.fullName%20%7C%7C%20a.userId,",
+        "chunkId": "d8228d",
+        "hash": "7526bfa9",
+        "encoded": "provider:%20providersById%5Ba.providerId%5D?.name%20%7C%7C%20a.providerId,",
         "prevChunkIds": []
       },
       "71": {
-        "chunkId": "618c82",
-        "hash": "3af9b7f0",
-        "encoded": "holdingsValue:%20valueSum,",
+        "chunkId": "d8228d",
+        "hash": "27b097b3",
+        "encoded": "userName:%20usersById%5Ba.userId%5D?.fullName%20%7C%7C%20a.userId,",
         "prevChunkIds": []
       },
       "72": {
-        "chunkId": "618c82",
-        "hash": "2c855759",
-        "encoded": "balanceDelta:%20delta,",
+        "chunkId": "d8228d",
+        "hash": "4737d3ad",
+        "encoded": "holdingsValue:%20valueSum,",
         "prevChunkIds": []
       },
       "73": {
-        "chunkId": "618c82",
-        "hash": "33bb5eb8",
-        "encoded": "holdingsCount:%20hs.length,",
+        "chunkId": "d8228d",
+        "hash": "1484493a",
+        "encoded": "balanceDelta:%20delta,",
         "prevChunkIds": []
       },
       "74": {
-        "chunkId": "618c82",
-        "hash": "0ecdb91d",
-        "encoded": "contributionCount:%20(contributionsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).length,",
+        "chunkId": "d8228d",
+        "hash": "3cf20777",
+        "encoded": "holdingsCount:%20hs.length,",
         "prevChunkIds": []
       },
       "75": {
-        "chunkId": "618c82",
-        "hash": "a60e01c4",
-        "encoded": "transactionCount:%20(transactionsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).length",
+        "chunkId": "d8228d",
+        "hash": "e120af62",
+        "encoded": "contributionCount:%20(contributionsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).length,",
         "prevChunkIds": []
       },
       "76": {
-        "chunkId": "618c82",
-        "hash": "8d7d086a",
-        "encoded": "%7D;",
+        "chunkId": "d8228d",
+        "hash": "848187e7",
+        "encoded": "transactionCount:%20(transactionsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).length",
         "prevChunkIds": []
       },
       "77": {
-        "chunkId": "618c82",
-        "hash": "8d78f88d",
-        "encoded": "%7D);",
-        "prevChunkIds": []
-      },
-      "79": {
-        "chunkId": "618c82",
-        "hash": "8794f4bb",
-        "encoded": "return%20%7B",
-        "prevChunkIds": []
-      },
-      "80": {
-        "chunkId": "618c82",
-        "hash": "a5d627d7",
-        "encoded": "users:%20users.data,",
-        "prevChunkIds": []
-      },
-      "81": {
-        "chunkId": "618c82",
-        "hash": "5c8e41a1",
-        "encoded": "providers:%20providers.data,",
-        "prevChunkIds": []
-      },
-      "82": {
-        "chunkId": "618c82",
-        "hash": "2ff73ca1",
-        "encoded": "accounts:%20accounts.data,",
-        "prevChunkIds": []
-      },
-      "83": {
-        "chunkId": "618c82",
-        "hash": "8d148d7d",
-        "encoded": "funds:%20funds.data,",
-        "prevChunkIds": []
-      },
-      "84": {
-        "chunkId": "618c82",
-        "hash": "2ad4a4a9",
-        "encoded": "holdings:%20holdings.data,",
-        "prevChunkIds": []
-      },
-      "85": {
-        "chunkId": "618c82",
-        "hash": "f14bd08f",
-        "encoded": "contributions:%20contributions.data,",
-        "prevChunkIds": []
-      },
-      "86": {
-        "chunkId": "618c82",
-        "hash": "bbe2e433",
-        "encoded": "transactions:%20transactions.data,",
-        "prevChunkIds": []
-      },
-      "87": {
-        "chunkId": "618c82",
-        "hash": "bf3d81d2",
-        "encoded": "usersById,",
-        "prevChunkIds": []
-      },
-      "88": {
-        "chunkId": "618c82",
-        "hash": "68dacf2d",
-        "encoded": "providersById,",
-        "prevChunkIds": []
-      },
-      "89": {
-        "chunkId": "618c82",
-        "hash": "4ab385d0",
-        "encoded": "accountsById,",
-        "prevChunkIds": []
-      },
-      "90": {
-        "chunkId": "618c82",
-        "hash": "bc407d48",
-        "encoded": "fundsById,",
-        "prevChunkIds": []
-      },
-      "91": {
-        "chunkId": "618c82",
-        "hash": "8477d878",
-        "encoded": "accountsByUser,",
-        "prevChunkIds": []
-      },
-      "92": {
-        "chunkId": "618c82",
-        "hash": "f9e83c1a",
-        "encoded": "holdingsByAccount,",
-        "prevChunkIds": []
-      },
-      "93": {
-        "chunkId": "618c82",
-        "hash": "1c9c1715",
-        "encoded": "contributionsByAccount,",
-        "prevChunkIds": []
-      },
-      "94": {
-        "chunkId": "618c82",
-        "hash": "369a2b16",
-        "encoded": "transactionsByAccount,",
-        "prevChunkIds": []
-      },
-      "95": {
-        "chunkId": "618c82",
-        "hash": "958326d6",
-        "encoded": "accountSummaries",
-        "prevChunkIds": []
-      },
-      "96": {
-        "chunkId": "618c82",
-        "hash": "e153936b",
+        "chunkId": "d8228d",
+        "hash": "12aee0ed",
         "encoded": "%7D;",
         "prevChunkIds": []
       },
+      "78": {
+        "chunkId": "d8228d",
+        "hash": "61f92be8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "d8228d",
+        "hash": "1dff927d",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "d8228d",
+        "hash": "5a94389b",
+        "encoded": "users:%20users.data,",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "d8228d",
+        "hash": "f8ee222e",
+        "encoded": "providers:%20providers.data,",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "d8228d",
+        "hash": "2f7a5588",
+        "encoded": "accounts:%20accounts.data,",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "d8228d",
+        "hash": "9438212e",
+        "encoded": "funds:%20funds.data,",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "d8228d",
+        "hash": "2503ad70",
+        "encoded": "holdings:%20holdings.data,",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "d8228d",
+        "hash": "8d21acf2",
+        "encoded": "contributions:%20contributions.data,",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "d8228d",
+        "hash": "0771e62d",
+        "encoded": "transactions:%20transactions.data,",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "d8228d",
+        "hash": "7c3e866f",
+        "encoded": "usersById,",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "d8228d",
+        "hash": "e1a1c867",
+        "encoded": "providersById,",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "d8228d",
+        "hash": "2fbab190",
+        "encoded": "accountsById,",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "d8228d",
+        "hash": "bd2f30dc",
+        "encoded": "fundsById,",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "d8228d",
+        "hash": "d1ded7e7",
+        "encoded": "accountsByUser,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "d8228d",
+        "hash": "f25b93e5",
+        "encoded": "holdingsByAccount,",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "d8228d",
+        "hash": "c3629ef3",
+        "encoded": "contributionsByAccount,",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "d8228d",
+        "hash": "49a6687c",
+        "encoded": "transactionsByAccount,",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "d8228d",
+        "hash": "29245d0a",
+        "encoded": "accountSummaries",
+        "prevChunkIds": []
+      },
       "97": {
-        "chunkId": "618c82",
-        "hash": "a812e7cb",
-        "encoded": "%7D,%20%5B",
+        "chunkId": "d8228d",
+        "hash": "b25cd696",
+        "encoded": "%7D;",
         "prevChunkIds": []
       },
       "98": {
-        "chunkId": "618c82",
-        "hash": "7ab6066d",
-        "encoded": "users.data,",
+        "chunkId": "d8228d",
+        "hash": "0f52412c",
+        "encoded": "%7D,%20%5B",
         "prevChunkIds": []
       },
       "99": {
-        "chunkId": "618c82",
-        "hash": "e7e12fe7",
-        "encoded": "providers.data,",
+        "chunkId": "d8228d",
+        "hash": "9ce6dbb3",
+        "encoded": "users.data,",
         "prevChunkIds": []
       },
       "100": {
-        "chunkId": "618c82",
-        "hash": "6098ddf8",
-        "encoded": "accounts.data,",
+        "chunkId": "d8228d",
+        "hash": "23c339b3",
+        "encoded": "providers.data,",
         "prevChunkIds": []
       },
       "101": {
-        "chunkId": "618c82",
-        "hash": "7d54d0e1",
-        "encoded": "funds.data,",
+        "chunkId": "d8228d",
+        "hash": "903bea54",
+        "encoded": "accounts.data,",
         "prevChunkIds": []
       },
       "102": {
-        "chunkId": "618c82",
-        "hash": "39e55f0b",
-        "encoded": "holdings.data,",
+        "chunkId": "d8228d",
+        "hash": "d6d728ab",
+        "encoded": "funds.data,",
         "prevChunkIds": []
       },
       "103": {
-        "chunkId": "618c82",
-        "hash": "141c68b2",
-        "encoded": "contributions.data,",
+        "chunkId": "d8228d",
+        "hash": "50dfbcd4",
+        "encoded": "holdings.data,",
         "prevChunkIds": []
       },
       "104": {
-        "chunkId": "618c82",
-        "hash": "ce4b720a",
-        "encoded": "transactions.data",
+        "chunkId": "d8228d",
+        "hash": "f65fefa5",
+        "encoded": "contributions.data,",
         "prevChunkIds": []
       },
       "105": {
-        "chunkId": "618c82",
-        "hash": "4026bf5b",
+        "chunkId": "d8228d",
+        "hash": "2e4d3f4c",
+        "encoded": "transactions.data",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "d8228d",
+        "hash": "de76dba2",
         "encoded": "%5D);",
         "prevChunkIds": []
       },
-      "107": {
-        "chunkId": "618c82",
-        "hash": "ead27d9b",
+      "108": {
+        "chunkId": "d8228d",
+        "hash": "8c1c0a4d",
         "encoded": "return%20%7B%20data,%20loading,%20error%20%7D;",
         "prevChunkIds": []
       },
-      "108": {
-        "chunkId": "275d37",
-        "hash": "c146bd79",
+      "109": {
+        "chunkId": "d8228d",
+        "hash": "7e03f6ac",
         "encoded": "%7D",
         "prevChunkIds": []
       }
