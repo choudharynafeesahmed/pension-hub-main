@@ -1,0 +1,42 @@
+[
+  {
+    "id": "acc1",
+    "userId": "u1",
+    "providerId": "pr1",
+    "accountNumber": "FP-102938",
+    "planType": "Defined Contribution",
+    "startDate": "2016-02-01",
+    "balance": 50234.0,
+    "currency": "GBP"
+  },
+  {
+    "id": "acc2",
+    "userId": "u1",
+    "providerId": "pr2",
+    "accountNumber": "SL-558821",
+    "planType": "Defined Contribution",
+    "startDate": "2019-07-01",
+    "balance": 23000.0,
+    "currency": "GBP"
+  },
+  {
+    "id": "acc3",
+    "userId": "u2",
+    "providerId": "pr1",
+    "accountNumber": "FP-204411",
+    "planType": "Defined Contribution",
+    "startDate": "2018-11-15",
+    "balance": 23085.8,
+    "currency": "GBP"
+  },
+  {
+    "id": "acc4",
+    "userId": "u3",
+    "providerId": "pr2",
+    "accountNumber": "SL-991144",
+    "planType": "Defined Contribution",
+    "startDate": "2014-05-10",
+    "balance": 31500.0,
+    "currency": "GBP"
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "public\\data\\providers.json": {
+    "filename": "providers.json",
+    "path": "public\\data\\providers.json",
+    "version": "1.1",
+    "chunks": {
+      "c62f54": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696472,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "7beb17ee",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "c62f54",
+        "hash": "ff8be5a3",
+        "encoded": "%5B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "c62f54",
+        "hash": "ea20506e",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "c62f54",
+        "hash": "5a56cf37",
+        "encoded": "%22id%22:%20%22pr1%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "c62f54",
+        "hash": "f8e3ef18",
+        "encoded": "%22name%22:%20%22FuturePension%20Plc%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "c62f54",
+        "hash": "4438b1d4",
+        "encoded": "%22website%22:%20%22https://futurepension.example%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c62f54",
+        "hash": "c6e37c17",
+        "encoded": "%22contact%22:%20%7B%20%22phone%22:%20%22+44%2020%207000%200001%22,%20%22email%22:%20%22support@futurepension.example%22%20%7D",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c62f54",
+        "hash": "4401be13",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c62f54",
+        "hash": "4b860d0d",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c62f54",
+        "hash": "3a9567ed",
+        "encoded": "%22id%22:%20%22pr2%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c62f54",
+        "hash": "afd817ef",
+        "encoded": "%22name%22:%20%22Secure%20Life%22,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "c62f54",
+        "hash": "0e0ec82c",
+        "encoded": "%22website%22:%20%22https://securelife.example%22,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c62f54",
+        "hash": "1d0e32e4",
+        "encoded": "%22contact%22:%20%7B%20%22phone%22:%20%22+44%2020%208000%200002%22,%20%22email%22:%20%22help@securelife.example%22%20%7D",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "c62f54",
+        "hash": "6a3f2143",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c62f54",
+        "hash": "0acde22a",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

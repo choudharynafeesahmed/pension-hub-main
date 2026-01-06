@@ -1,0 +1,475 @@
+{
+  "scripts\\validate-data.mjs": {
+    "filename": "validate-data.mjs",
+    "path": "scripts\\validate-data.mjs",
+    "version": "1.1",
+    "chunks": {
+      "bf774c": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696518,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "f0a9ce36",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "bf774c",
+        "hash": "83e69111",
+        "encoded": "//%20Simple%20validator%20for%20dataset%20referential%20integrity%20and%20basic%20invariants.",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "bf774c",
+        "hash": "6da4c91f",
+        "encoded": "//%20No%20external%20deps;%20run%20with:%20node%20scripts/validate-data.mjs",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "bf774c",
+        "hash": "178c818b",
+        "encoded": "import%20%7B%20readFile%20%7D%20from%20%22node:fs/promises%22;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "bf774c",
+        "hash": "e3c85013",
+        "encoded": "import%20path%20from%20%22node:path%22;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "bf774c",
+        "hash": "d8a6c797",
+        "encoded": "import%20process%20from%20%22node:process%22;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "bf774c",
+        "hash": "c3e46eb1",
+        "encoded": "const%20readJson%20=%20async%20(p)%20=%3E%20JSON.parse(await%20readFile(p,%20%22utf8%22));",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "bf774c",
+        "hash": "aab08b2f",
+        "encoded": "const%20ok%20=%20(cond,%20msg)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "bf774c",
+        "hash": "818dea48",
+        "encoded": "if%20(!cond)%20throw%20new%20Error(msg);",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "bf774c",
+        "hash": "abc6348f",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "bf774c",
+        "hash": "b3c6255b",
+        "encoded": "const%20sum%20=%20(arr)%20=%3E%20arr.reduce((a,%20b)%20=%3E%20a%20+%20b,%200);",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "bf774c",
+        "hash": "855c61f6",
+        "encoded": "async%20function%20main()%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "bf774c",
+        "hash": "10f66a3e",
+        "encoded": "const%20root%20=%20process.cwd();",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "bf774c",
+        "hash": "9115bb01",
+        "encoded": "const%20dataDir%20=%20path.join(root,%20%22public%22,%20%22data%22);",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "bf774c",
+        "hash": "1f6ee771",
+        "encoded": "const%20users%20=%20await%20readJson(path.join(dataDir,%20%22users.json%22));",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "bf774c",
+        "hash": "28748f4d",
+        "encoded": "const%20providers%20=%20await%20readJson(path.join(dataDir,%20%22providers.json%22));",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "bf774c",
+        "hash": "049e8e4d",
+        "encoded": "const%20accounts%20=%20await%20readJson(path.join(dataDir,%20%22accounts.json%22));",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "bf774c",
+        "hash": "43b1be8f",
+        "encoded": "const%20funds%20=%20await%20readJson(path.join(dataDir,%20%22funds.json%22));",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "bf774c",
+        "hash": "209ee329",
+        "encoded": "const%20holdings%20=%20await%20readJson(path.join(dataDir,%20%22holdings.json%22));",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "bf774c",
+        "hash": "630f9ab7",
+        "encoded": "const%20contributions%20=%20await%20readJson(path.join(dataDir,%20%22contributions.json%22));",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "bf774c",
+        "hash": "7eae23dd",
+        "encoded": "const%20transactions%20=%20await%20readJson(path.join(dataDir,%20%22transactions.json%22));",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "bf774c",
+        "hash": "58a4fe5d",
+        "encoded": "//%20Indexes",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "bf774c",
+        "hash": "b17f5c60",
+        "encoded": "const%20userIds%20=%20new%20Set(users.map((u)%20=%3E%20u.id));",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "bf774c",
+        "hash": "82eb61d7",
+        "encoded": "const%20providerIds%20=%20new%20Set(providers.map((p)%20=%3E%20p.id));",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "bf774c",
+        "hash": "57246cb8",
+        "encoded": "const%20accountIds%20=%20new%20Set(accounts.map((a)%20=%3E%20a.id));",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "bf774c",
+        "hash": "7597924f",
+        "encoded": "const%20fundIds%20=%20new%20Set(funds.map((f)%20=%3E%20f.id));",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "bf774c",
+        "hash": "5278964c",
+        "encoded": "//%20Referential%20integrity",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "bf774c",
+        "hash": "c4047678",
+        "encoded": "for%20(const%20a%20of%20accounts)%20%7B",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "bf774c",
+        "hash": "c3d399cf",
+        "encoded": "ok(userIds.has(a.userId),%20%60Account%20$%7Ba.id%7D%20references%20missing%20userId%20$%7Ba.userId%7D%60);",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "bf774c",
+        "hash": "767036bb",
+        "encoded": "ok(providerIds.has(a.providerId),%20%60Account%20$%7Ba.id%7D%20references%20missing%20providerId%20$%7Ba.providerId%7D%60);",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "bf774c",
+        "hash": "dfad4947",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "bf774c",
+        "hash": "fae12e59",
+        "encoded": "for%20(const%20h%20of%20holdings)%20%7B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "bf774c",
+        "hash": "481473ef",
+        "encoded": "ok(accountIds.has(h.accountId),%20%60Holding%20$%7Bh.id%7D%20references%20missing%20accountId%20$%7Bh.accountId%7D%60);",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "bf774c",
+        "hash": "c8a1d9bb",
+        "encoded": "ok(fundIds.has(h.fundId),%20%60Holding%20$%7Bh.id%7D%20references%20missing%20fundId%20$%7Bh.fundId%7D%60);",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "bf774c",
+        "hash": "70464858",
+        "encoded": "ok(h.value%20%3E=%200,%20%60Holding%20$%7Bh.id%7D%20has%20negative%20value%60);",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "bf774c",
+        "hash": "792377b1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "bf774c",
+        "hash": "aeab96c6",
+        "encoded": "for%20(const%20c%20of%20contributions)%20%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "bf774c",
+        "hash": "7fbaea62",
+        "encoded": "ok(accountIds.has(c.accountId),%20%60Contribution%20$%7Bc.id%7D%20references%20missing%20accountId%20$%7Bc.accountId%7D%60);",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "bf774c",
+        "hash": "c3033cdd",
+        "encoded": "ok(c.employeeAmount%20%3E=%200%20&&%20c.employerAmount%20%3E=%200,%20%60Contribution%20$%7Bc.id%7D%20has%20negative%20amounts%60);",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "bf774c",
+        "hash": "5046e502",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "bf774c",
+        "hash": "0cde541e",
+        "encoded": "for%20(const%20t%20of%20transactions)%20%7B",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "bf774c",
+        "hash": "22d318a7",
+        "encoded": "ok(accountIds.has(t.accountId),%20%60Transaction%20$%7Bt.id%7D%20references%20missing%20accountId%20$%7Bt.accountId%7D%60);",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "bf774c",
+        "hash": "57c5213d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "bf774c",
+        "hash": "1d08e43b",
+        "encoded": "//%20Balance%20~=%20sum(holdings.value)",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "bf774c",
+        "hash": "d02209e6",
+        "encoded": "const%20holdingsByAccount%20=%20holdings.reduce((m,%20h)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "bf774c",
+        "hash": "495e7ba0",
+        "encoded": "(m%5Bh.accountId%5D%20%7C%7C=%20%5B%5D).push(h);",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "bf774c",
+        "hash": "b5913a1f",
+        "encoded": "return%20m;",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "bf774c",
+        "hash": "12c0bd15",
+        "encoded": "%7D,%20%7B%7D);",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "bf774c",
+        "hash": "68557b7f",
+        "encoded": "for%20(const%20a%20of%20accounts)%20%7B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "bf774c",
+        "hash": "71f51ea7",
+        "encoded": "const%20hv%20=%20sum((holdingsByAccount%5Ba.id%5D%20%7C%7C%20%5B%5D).map((h)%20=%3E%20Number(h.value)));",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "bf774c",
+        "hash": "20920782",
+        "encoded": "const%20bal%20=%20Number(a.balance);",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "bf774c",
+        "hash": "ae623176",
+        "encoded": "const%20delta%20=%20Math.abs(hv%20-%20bal);",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "bf774c",
+        "hash": "cbb6ca66",
+        "encoded": "ok(delta%20%3C=%200.01,%20%60Account%20$%7Ba.id%7D%20balance%20$%7Bbal%7D%20!=%20holdings%20sum%20$%7Bhv%7D%20(delta=$%7Bdelta.toFixed(2)%7D)%60);",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "bf774c",
+        "hash": "309dd352",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "bf774c",
+        "hash": "e357199f",
+        "encoded": "//%20Basic%20sanity%20on%20funds%20expense%20ratios%20and%20risk%20levels",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "bf774c",
+        "hash": "5516e28f",
+        "encoded": "const%20validRisk%20=%20new%20Set(%5B%22Very%20Low%22,%20%22Low%22,%20%22Medium%22,%20%22High%22%5D);",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "bf774c",
+        "hash": "27f7a24a",
+        "encoded": "for%20(const%20f%20of%20funds)%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "bf774c",
+        "hash": "fa7dcea5",
+        "encoded": "ok(f.expenseRatio%20%3E=%200%20&&%20f.expenseRatio%20%3C%202,%20%60Fund%20$%7Bf.id%7D%20invalid%20expenseRatio%60);",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "bf774c",
+        "hash": "07c344f6",
+        "encoded": "ok(validRisk.has(f.riskLevel),%20%60Fund%20$%7Bf.id%7D%20invalid%20riskLevel%20$%7Bf.riskLevel%7D%60);",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "bf774c",
+        "hash": "f706ff69",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "bf774c",
+        "hash": "53d07d9d",
+        "encoded": "//%20Output%20summary",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "bf774c",
+        "hash": "131fe4e7",
+        "encoded": "const%20summary%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "bf774c",
+        "hash": "f642276f",
+        "encoded": "users:%20users.length,",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "bf774c",
+        "hash": "ab4c438a",
+        "encoded": "providers:%20providers.length,",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "bf774c",
+        "hash": "a67d48ed",
+        "encoded": "accounts:%20accounts.length,",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "bf774c",
+        "hash": "f91d4dd7",
+        "encoded": "funds:%20funds.length,",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "bf774c",
+        "hash": "111edc24",
+        "encoded": "holdings:%20holdings.length,",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "bf774c",
+        "hash": "acfa8b47",
+        "encoded": "contributions:%20contributions.length,",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "bf774c",
+        "hash": "7d0fe31b",
+        "encoded": "transactions:%20transactions.length",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "bf774c",
+        "hash": "12aee0ed",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "bf774c",
+        "hash": "8e9beb36",
+        "encoded": "console.log(%22%5Bdataset:ok%5D%22,%20summary);",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "bf774c",
+        "hash": "8aac2494",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "bf774c",
+        "hash": "614e5096",
+        "encoded": "main().catch((e)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "bf774c",
+        "hash": "d321e133",
+        "encoded": "console.error(%22%5Bdataset:error%5D%22,%20e.message);",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "bf774c",
+        "hash": "7d7ef943",
+        "encoded": "process.exitCode%20=%201;",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "bf774c",
+        "hash": "34456457",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

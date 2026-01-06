@@ -1,0 +1,29 @@
+[
+  {
+    "id": "u1",
+    "fullName": "Alex Johnson",
+    "email": "alex.johnson@example.com",
+    "dateOfBirth": "1986-04-12",
+    "country": "UK",
+    "riskProfile": "Balanced",
+    "lastLogin": "2025-01-04T10:12:00Z"
+  },
+  {
+    "id": "u2",
+    "fullName": "Priya Singh",
+    "email": "priya.singh@example.com",
+    "dateOfBirth": "1990-09-03",
+    "country": "UK",
+    "riskProfile": "Growth",
+    "lastLogin": "2025-01-05T09:05:00Z"
+  },
+  {
+    "id": "u3",
+    "fullName": "Daniel Carter",
+    "email": "daniel.carter@example.com",
+    "dateOfBirth": "1979-01-21",
+    "country": "UK",
+    "riskProfile": "Conservative",
+    "lastLogin": "2025-01-02T17:44:00Z"
+  }
+]

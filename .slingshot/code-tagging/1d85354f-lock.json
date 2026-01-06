@@ -1,0 +1,97 @@
+{
+  "public\\data\\transactions.json": {
+    "filename": "transactions.json",
+    "path": "public\\data\\transactions.json",
+    "version": "1.1",
+    "chunks": {
+      "4a848d": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696505,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "e73191e7",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "4a848d",
+        "hash": "ff8be5a3",
+        "encoded": "%5B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "4a848d",
+        "hash": "317fd9e7",
+        "encoded": "%7B%20%22id%22:%20%22t1%22,%20%22accountId%22:%20%22acc1%22,%20%22type%22:%20%22Contribution%22,%20%22date%22:%20%222024-12-30%22,%20%22amount%22:%20500.0,%20%22description%22:%20%22Employee+Employer%20contribution%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "4a848d",
+        "hash": "c1d1f171",
+        "encoded": "%7B%20%22id%22:%20%22t2%22,%20%22accountId%22:%20%22acc1%22,%20%22type%22:%20%22Management%20Fee%22,%20%22date%22:%20%222024-12-31%22,%20%22amount%22:%20-7.84,%20%22description%22:%20%22Monthly%20fund%20fee%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "4a848d",
+        "hash": "d711cc5e",
+        "encoded": "%7B%20%22id%22:%20%22t3%22,%20%22accountId%22:%20%22acc1%22,%20%22type%22:%20%22Dividend%22,%20%22date%22:%20%222024-12-20%22,%20%22amount%22:%2038.2,%20%22description%22:%20%22Fund%20distribution%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "4a848d",
+        "hash": "f5f02edc",
+        "encoded": "%7B%20%22id%22:%20%22t4%22,%20%22accountId%22:%20%22acc2%22,%20%22type%22:%20%22Contribution%22,%20%22date%22:%20%222024-12-30%22,%20%22amount%22:%20400.0,%20%22description%22:%20%22Employee+Employer%20contribution%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "4a848d",
+        "hash": "05b4c1a7",
+        "encoded": "%7B%20%22id%22:%20%22t5%22,%20%22accountId%22:%20%22acc2%22,%20%22type%22:%20%22Switch%22,%20%22date%22:%20%222024-11-15%22,%20%22amount%22:%200.0,%20%22description%22:%20%22Rebalanced%20f3-%3Ef4%2010%25%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "4a848d",
+        "hash": "afcda052",
+        "encoded": "%7B%20%22id%22:%20%22t6%22,%20%22accountId%22:%20%22acc3%22,%20%22type%22:%20%22Contribution%22,%20%22date%22:%20%222024-12-29%22,%20%22amount%22:%20300.0,%20%22description%22:%20%22Employee+Employer%20contribution%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "4a848d",
+        "hash": "8521a2ef",
+        "encoded": "%7B%20%22id%22:%20%22t7%22,%20%22accountId%22:%20%22acc3%22,%20%22type%22:%20%22Management%20Fee%22,%20%22date%22:%20%222024-12-31%22,%20%22amount%22:%20-5.12,%20%22description%22:%20%22Monthly%20fund%20fee%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "4a848d",
+        "hash": "30609fe5",
+        "encoded": "%7B%20%22id%22:%20%22t8%22,%20%22accountId%22:%20%22acc4%22,%20%22type%22:%20%22Contribution%22,%20%22date%22:%20%222024-12-30%22,%20%22amount%22:%20360.0,%20%22description%22:%20%22Employee+Employer%20contribution%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "4a848d",
+        "hash": "f293a5ee",
+        "encoded": "%7B%20%22id%22:%20%22t9%22,%20%22accountId%22:%20%22acc4%22,%20%22type%22:%20%22Dividend%22,%20%22date%22:%20%222024-12-18%22,%20%22amount%22:%2025.9,%20%22description%22:%20%22Fund%20distribution%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "4a848d",
+        "hash": "387cc2e5",
+        "encoded": "%7B%20%22id%22:%20%22t10%22,%20%22accountId%22:%20%22acc4%22,%20%22type%22:%20%22Management%20Fee%22,%20%22date%22:%20%222024-12-31%22,%20%22amount%22:%20-6.44,%20%22description%22:%20%22Monthly%20fund%20fee%22%20%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "4a848d",
+        "hash": "2f57256f",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

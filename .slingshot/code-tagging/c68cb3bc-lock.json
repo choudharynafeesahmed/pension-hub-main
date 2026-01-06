@@ -1,0 +1,85 @@
+{
+  "public\\data\\holdings.json": {
+    "filename": "holdings.json",
+    "path": "public\\data\\holdings.json",
+    "version": "1.1",
+    "chunks": {
+      "be100f": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696491,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "50774870",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "be100f",
+        "hash": "ff8be5a3",
+        "encoded": "%5B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "be100f",
+        "hash": "e53817ef",
+        "encoded": "%7B%20%22id%22:%20%22h1%22,%20%22accountId%22:%20%22acc1%22,%20%22fundId%22:%20%22f1%22,%20%22units%22:%20100.0,%20%22price%22:%20200.0,%20%22value%22:%2020000.0,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "be100f",
+        "hash": "9abc4585",
+        "encoded": "%7B%20%22id%22:%20%22h2%22,%20%22accountId%22:%20%22acc1%22,%20%22fundId%22:%20%22f2%22,%20%22units%22:%20300.0,%20%22price%22:%20100.78,%20%22value%22:%2030234.0,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "be100f",
+        "hash": "8f1fdd2e",
+        "encoded": "%7B%20%22id%22:%20%22h3%22,%20%22accountId%22:%20%22acc2%22,%20%22fundId%22:%20%22f3%22,%20%22units%22:%2050.0,%20%22price%22:%20300.0,%20%22value%22:%2015000.0,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "be100f",
+        "hash": "8673d74b",
+        "encoded": "%7B%20%22id%22:%20%22h4%22,%20%22accountId%22:%20%22acc2%22,%20%22fundId%22:%20%22f4%22,%20%22units%22:%2080.0,%20%22price%22:%20100.0,%20%22value%22:%208000.0,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "be100f",
+        "hash": "24929f78",
+        "encoded": "%7B%20%22id%22:%20%22h5%22,%20%22accountId%22:%20%22acc3%22,%20%22fundId%22:%20%22f1%22,%20%22units%22:%2060.0,%20%22price%22:%20200.0,%20%22value%22:%2012000.0,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "be100f",
+        "hash": "3ac700f7",
+        "encoded": "%7B%20%22id%22:%20%22h6%22,%20%22accountId%22:%20%22acc3%22,%20%22fundId%22:%20%22f2%22,%20%22units%22:%20110.0,%20%22price%22:%20100.78,%20%22value%22:%2011085.8,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "be100f",
+        "hash": "d4146dfc",
+        "encoded": "%7B%20%22id%22:%20%22h7%22,%20%22accountId%22:%20%22acc4%22,%20%22fundId%22:%20%22f3%22,%20%22units%22:%2070.0,%20%22price%22:%20300.0,%20%22value%22:%2021000.0,%20%22asOf%22:%20%222025-01-03%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "be100f",
+        "hash": "41fff98e",
+        "encoded": "%7B%20%22id%22:%20%22h8%22,%20%22accountId%22:%20%22acc4%22,%20%22fundId%22:%20%22f5%22,%20%22units%22:%2070.0,%20%22price%22:%20150.0,%20%22value%22:%2010500.0,%20%22asOf%22:%20%222025-01-03%22%20%7D",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "be100f",
+        "hash": "3cf09a6c",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

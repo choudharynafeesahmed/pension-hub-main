@@ -1,0 +1,13 @@
+[
+  { "id": "c1", "accountId": "acc1", "date": "2024-10-30", "employeeAmount": 250.0, "employerAmount": 250.0, "salary": 4500.0, "status": "Settled" },
+  { "id": "c2", "accountId": "acc1", "date": "2024-11-30", "employeeAmount": 250.0, "employerAmount": 250.0, "salary": 4500.0, "status": "Settled" },
+  { "id": "c3", "accountId": "acc1", "date": "2024-12-30", "employeeAmount": 250.0, "employerAmount": 250.0, "salary": 4500.0, "status": "Settled" },
+
+  { "id": "c4", "accountId": "acc2", "date": "2024-12-30", "employeeAmount": 200.0, "employerAmount": 200.0, "salary": 4200.0, "status": "Settled" },
+
+  { "id": "c5", "accountId": "acc3", "date": "2024-12-29", "employeeAmount": 150.0, "employerAmount": 150.0, "salary": 3900.0, "status": "Settled" },
+
+  { "id": "c6", "accountId": "acc4", "date": "2024-10-30", "employeeAmount": 180.0, "employerAmount": 180.0, "salary": 4100.0, "status": "Settled" },
+  { "id": "c7", "accountId": "acc4", "date": "2024-11-30", "employeeAmount": 180.0, "employerAmount": 180.0, "salary": 4100.0, "status": "Settled" },
+  { "id": "c8", "accountId": "acc4", "date": "2024-12-30", "employeeAmount": 180.0, "employerAmount": 180.0, "salary": 4100.0, "status": "Pending" }
+]

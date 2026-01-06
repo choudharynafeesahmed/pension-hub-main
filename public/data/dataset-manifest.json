@@ -1,0 +1,14 @@
+{
+  "name": "pension-hub-main mock dataset",
+  "version": "1.0.0",
+  "generatedAt": "2025-01-06T00:00:00Z",
+  "files": {
+    "users": "public/data/users.json",
+    "providers": "public/data/providers.json",
+    "accounts": "public/data/accounts.json",
+    "funds": "public/data/funds.json",
+    "holdings": "public/data/holdings.json",
+    "contributions": "public/data/contributions.json",
+    "transactions": "public/data/transactions.json"
+  }
+}

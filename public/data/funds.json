@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "providerId": "pr1",
+    "name": "FP Global Equity Index",
+    "category": "Equity",
+    "riskLevel": "High",
+    "expenseRatio": 0.12,
+    "isin": "GB00FPGEI001",
+    "currency": "GBP",
+    "isDefault": false
+  },
+  {
+    "id": "f2",
+    "providerId": "pr1",
+    "name": "FP UK Gilts",
+    "category": "Bonds",
+    "riskLevel": "Low",
+    "expenseRatio": 0.08,
+    "isin": "GB00FPGILTS2",
+    "currency": "GBP",
+    "isDefault": true
+  },
+  {
+    "id": "f3",
+    "providerId": "pr2",
+    "name": "Secure Life Target Retirement 2045",
+    "category": "Target Date",
+    "riskLevel": "Medium",
+    "expenseRatio": 0.18,
+    "isin": "GB00SLTR2045",
+    "currency": "GBP",
+    "isDefault": true
+  },
+  {
+    "id": "f4",
+    "providerId": "pr2",
+    "name": "SL Money Market",
+    "category": "Cash",
+    "riskLevel": "Very Low",
+    "expenseRatio": 0.05,
+    "isin": "GB00SLMM0001",
+    "currency": "GBP",
+    "isDefault": false
+  },
+  {
+    "id": "f5",
+    "providerId": "pr1",
+    "name": "FP Sustainable Balanced",
+    "category": "Mixed Assets",
+    "riskLevel": "Medium",
+    "expenseRatio": 0.15,
+    "isin": "GB00FPSB0005",
+    "currency": "GBP",
+    "isDefault": false
+  }
+]

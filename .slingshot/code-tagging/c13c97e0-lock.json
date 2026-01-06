@@ -1,0 +1,85 @@
+{
+  "public\\data\\contributions.json": {
+    "filename": "contributions.json",
+    "path": "public\\data\\contributions.json",
+    "version": "1.1",
+    "chunks": {
+      "d1f187": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696501,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "7b9e9bd4",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "d1f187",
+        "hash": "ff8be5a3",
+        "encoded": "%5B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "d1f187",
+        "hash": "46f60f5d",
+        "encoded": "%7B%20%22id%22:%20%22c1%22,%20%22accountId%22:%20%22acc1%22,%20%22date%22:%20%222024-10-30%22,%20%22employeeAmount%22:%20250.0,%20%22employerAmount%22:%20250.0,%20%22salary%22:%204500.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "d1f187",
+        "hash": "23eb6ab9",
+        "encoded": "%7B%20%22id%22:%20%22c2%22,%20%22accountId%22:%20%22acc1%22,%20%22date%22:%20%222024-11-30%22,%20%22employeeAmount%22:%20250.0,%20%22employerAmount%22:%20250.0,%20%22salary%22:%204500.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "d1f187",
+        "hash": "08236c7e",
+        "encoded": "%7B%20%22id%22:%20%22c3%22,%20%22accountId%22:%20%22acc1%22,%20%22date%22:%20%222024-12-30%22,%20%22employeeAmount%22:%20250.0,%20%22employerAmount%22:%20250.0,%20%22salary%22:%204500.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "d1f187",
+        "hash": "53336d4e",
+        "encoded": "%7B%20%22id%22:%20%22c4%22,%20%22accountId%22:%20%22acc2%22,%20%22date%22:%20%222024-12-30%22,%20%22employeeAmount%22:%20200.0,%20%22employerAmount%22:%20200.0,%20%22salary%22:%204200.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "d1f187",
+        "hash": "b88e0cc2",
+        "encoded": "%7B%20%22id%22:%20%22c5%22,%20%22accountId%22:%20%22acc3%22,%20%22date%22:%20%222024-12-29%22,%20%22employeeAmount%22:%20150.0,%20%22employerAmount%22:%20150.0,%20%22salary%22:%203900.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "d1f187",
+        "hash": "d398ef14",
+        "encoded": "%7B%20%22id%22:%20%22c6%22,%20%22accountId%22:%20%22acc4%22,%20%22date%22:%20%222024-10-30%22,%20%22employeeAmount%22:%20180.0,%20%22employerAmount%22:%20180.0,%20%22salary%22:%204100.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "d1f187",
+        "hash": "48660090",
+        "encoded": "%7B%20%22id%22:%20%22c7%22,%20%22accountId%22:%20%22acc4%22,%20%22date%22:%20%222024-11-30%22,%20%22employeeAmount%22:%20180.0,%20%22employerAmount%22:%20180.0,%20%22salary%22:%204100.0,%20%22status%22:%20%22Settled%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "d1f187",
+        "hash": "38edafad",
+        "encoded": "%7B%20%22id%22:%20%22c8%22,%20%22accountId%22:%20%22acc4%22,%20%22date%22:%20%222024-12-30%22,%20%22employeeAmount%22:%20180.0,%20%22employerAmount%22:%20180.0,%20%22salary%22:%204100.0,%20%22status%22:%20%22Pending%22%20%7D",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "d1f187",
+        "hash": "3cf09a6c",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

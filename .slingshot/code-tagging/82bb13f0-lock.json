@@ -1,0 +1,277 @@
+{
+  "public\\data\\accounts.json": {
+    "filename": "accounts.json",
+    "path": "public\\data\\accounts.json",
+    "version": "1.1",
+    "chunks": {
+      "a2e3e8": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696479,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "ce9bc638",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "a2e3e8",
+        "hash": "ff8be5a3",
+        "encoded": "%5B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "a2e3e8",
+        "hash": "ea20506e",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "a2e3e8",
+        "hash": "fc03674f",
+        "encoded": "%22id%22:%20%22acc1%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "a2e3e8",
+        "hash": "4bbe2532",
+        "encoded": "%22userId%22:%20%22u1%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "a2e3e8",
+        "hash": "5ba006ad",
+        "encoded": "%22providerId%22:%20%22pr1%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "a2e3e8",
+        "hash": "fee65267",
+        "encoded": "%22accountNumber%22:%20%22FP-102938%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "a2e3e8",
+        "hash": "b2bde8e7",
+        "encoded": "%22planType%22:%20%22Defined%20Contribution%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "a2e3e8",
+        "hash": "41b175bf",
+        "encoded": "%22startDate%22:%20%222016-02-01%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a2e3e8",
+        "hash": "550c0760",
+        "encoded": "%22balance%22:%2050234.0,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a2e3e8",
+        "hash": "28b858fc",
+        "encoded": "%22currency%22:%20%22GBP%22",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "a2e3e8",
+        "hash": "edd993f3",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a2e3e8",
+        "hash": "6aee126d",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "a2e3e8",
+        "hash": "ba7c583e",
+        "encoded": "%22id%22:%20%22acc2%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a2e3e8",
+        "hash": "84f409de",
+        "encoded": "%22userId%22:%20%22u1%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "a2e3e8",
+        "hash": "53d8ff53",
+        "encoded": "%22providerId%22:%20%22pr2%22,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a2e3e8",
+        "hash": "b949ad5f",
+        "encoded": "%22accountNumber%22:%20%22SL-558821%22,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "a2e3e8",
+        "hash": "5b299a5a",
+        "encoded": "%22planType%22:%20%22Defined%20Contribution%22,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a2e3e8",
+        "hash": "c97abdd4",
+        "encoded": "%22startDate%22:%20%222019-07-01%22,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "a2e3e8",
+        "hash": "c1d936b4",
+        "encoded": "%22balance%22:%2023000.0,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a2e3e8",
+        "hash": "317784dc",
+        "encoded": "%22currency%22:%20%22GBP%22",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a2e3e8",
+        "hash": "7ce81970",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a2e3e8",
+        "hash": "52ce85a9",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a2e3e8",
+        "hash": "54c51017",
+        "encoded": "%22id%22:%20%22acc3%22,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a2e3e8",
+        "hash": "29673266",
+        "encoded": "%22userId%22:%20%22u2%22,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "a2e3e8",
+        "hash": "e68a17a3",
+        "encoded": "%22providerId%22:%20%22pr1%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "a2e3e8",
+        "hash": "0ace9fee",
+        "encoded": "%22accountNumber%22:%20%22FP-204411%22,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "a2e3e8",
+        "hash": "f56244a2",
+        "encoded": "%22planType%22:%20%22Defined%20Contribution%22,",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "a2e3e8",
+        "hash": "bd8ab2dc",
+        "encoded": "%22startDate%22:%20%222018-11-15%22,",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "a2e3e8",
+        "hash": "76b5d5de",
+        "encoded": "%22balance%22:%2023085.8,",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "a2e3e8",
+        "hash": "1cb88e45",
+        "encoded": "%22currency%22:%20%22GBP%22",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "a2e3e8",
+        "hash": "f8124d3b",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "a2e3e8",
+        "hash": "ebf3f52a",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "a2e3e8",
+        "hash": "5567baea",
+        "encoded": "%22id%22:%20%22acc4%22,",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "a2e3e8",
+        "hash": "3b101836",
+        "encoded": "%22userId%22:%20%22u3%22,",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "a2e3e8",
+        "hash": "bc2c862b",
+        "encoded": "%22providerId%22:%20%22pr2%22,",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "a2e3e8",
+        "hash": "1b45d46b",
+        "encoded": "%22accountNumber%22:%20%22SL-991144%22,",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "a2e3e8",
+        "hash": "e5678363",
+        "encoded": "%22planType%22:%20%22Defined%20Contribution%22,",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "a2e3e8",
+        "hash": "28a78d7c",
+        "encoded": "%22startDate%22:%20%222014-05-10%22,",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a2e3e8",
+        "hash": "427a6b94",
+        "encoded": "%22balance%22:%2031500.0,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "a2e3e8",
+        "hash": "d79b4957",
+        "encoded": "%22currency%22:%20%22GBP%22",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "a2e3e8",
+        "hash": "792377b1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "a2e3e8",
+        "hash": "b6d6c5db",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

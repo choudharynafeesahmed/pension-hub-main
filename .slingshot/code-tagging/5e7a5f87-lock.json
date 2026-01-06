@@ -1,0 +1,367 @@
+{
+  "public\\data\\funds.json": {
+    "filename": "funds.json",
+    "path": "public\\data\\funds.json",
+    "version": "1.1",
+    "chunks": {
+      "b5bc85": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696486,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "fb27748b",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "b5bc85",
+        "hash": "ff8be5a3",
+        "encoded": "%5B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "b5bc85",
+        "hash": "ea20506e",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b5bc85",
+        "hash": "bdfd94d4",
+        "encoded": "%22id%22:%20%22f1%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "b5bc85",
+        "hash": "34be1700",
+        "encoded": "%22providerId%22:%20%22pr1%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "b5bc85",
+        "hash": "db42c272",
+        "encoded": "%22name%22:%20%22FP%20Global%20Equity%20Index%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b5bc85",
+        "hash": "1db6424a",
+        "encoded": "%22category%22:%20%22Equity%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "b5bc85",
+        "hash": "e9d08ded",
+        "encoded": "%22riskLevel%22:%20%22High%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "b5bc85",
+        "hash": "e43e2c3a",
+        "encoded": "%22expenseRatio%22:%200.12,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b5bc85",
+        "hash": "2c10e2ba",
+        "encoded": "%22isin%22:%20%22GB00FPGEI001%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "b5bc85",
+        "hash": "4641360c",
+        "encoded": "%22currency%22:%20%22GBP%22,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "b5bc85",
+        "hash": "adda8d31",
+        "encoded": "%22isDefault%22:%20false",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "b5bc85",
+        "hash": "23312e7d",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "b5bc85",
+        "hash": "ff0974b5",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "b5bc85",
+        "hash": "c49b6b37",
+        "encoded": "%22id%22:%20%22f2%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "b5bc85",
+        "hash": "efe9175c",
+        "encoded": "%22providerId%22:%20%22pr1%22,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "b5bc85",
+        "hash": "93330622",
+        "encoded": "%22name%22:%20%22FP%20UK%20Gilts%22,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "b5bc85",
+        "hash": "f1928620",
+        "encoded": "%22category%22:%20%22Bonds%22,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "b5bc85",
+        "hash": "2770f008",
+        "encoded": "%22riskLevel%22:%20%22Low%22,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "b5bc85",
+        "hash": "e49bb8bc",
+        "encoded": "%22expenseRatio%22:%200.08,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "b5bc85",
+        "hash": "0b40400c",
+        "encoded": "%22isin%22:%20%22GB00FPGILTS2%22,",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "b5bc85",
+        "hash": "a5b3c816",
+        "encoded": "%22currency%22:%20%22GBP%22,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "b5bc85",
+        "hash": "874eb1f3",
+        "encoded": "%22isDefault%22:%20true",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "b5bc85",
+        "hash": "6d666e52",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "b5bc85",
+        "hash": "b225146a",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "b5bc85",
+        "hash": "03d42c04",
+        "encoded": "%22id%22:%20%22f3%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "b5bc85",
+        "hash": "814349b0",
+        "encoded": "%22providerId%22:%20%22pr2%22,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "b5bc85",
+        "hash": "4f407ce4",
+        "encoded": "%22name%22:%20%22Secure%20Life%20Target%20Retirement%202045%22,",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "b5bc85",
+        "hash": "e1585629",
+        "encoded": "%22category%22:%20%22Target%20Date%22,",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "b5bc85",
+        "hash": "1df0f802",
+        "encoded": "%22riskLevel%22:%20%22Medium%22,",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "b5bc85",
+        "hash": "ec8d029c",
+        "encoded": "%22expenseRatio%22:%200.18,",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "b5bc85",
+        "hash": "1a9929bd",
+        "encoded": "%22isin%22:%20%22GB00SLTR2045%22,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "b5bc85",
+        "hash": "07509251",
+        "encoded": "%22currency%22:%20%22GBP%22,",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "b5bc85",
+        "hash": "32c2c984",
+        "encoded": "%22isDefault%22:%20true",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "b5bc85",
+        "hash": "7b74a9c4",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "b5bc85",
+        "hash": "da274ab8",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "b5bc85",
+        "hash": "063da176",
+        "encoded": "%22id%22:%20%22f4%22,",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "b5bc85",
+        "hash": "6974d4af",
+        "encoded": "%22providerId%22:%20%22pr2%22,",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "b5bc85",
+        "hash": "030f398a",
+        "encoded": "%22name%22:%20%22SL%20Money%20Market%22,",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "b5bc85",
+        "hash": "43d1cb7b",
+        "encoded": "%22category%22:%20%22Cash%22,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "b5bc85",
+        "hash": "670f74c0",
+        "encoded": "%22riskLevel%22:%20%22Very%20Low%22,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "b5bc85",
+        "hash": "ea6d805c",
+        "encoded": "%22expenseRatio%22:%200.05,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "b5bc85",
+        "hash": "6c121482",
+        "encoded": "%22isin%22:%20%22GB00SLMM0001%22,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "b5bc85",
+        "hash": "25d4bb12",
+        "encoded": "%22currency%22:%20%22GBP%22,",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "b5bc85",
+        "hash": "d9c13fbd",
+        "encoded": "%22isDefault%22:%20false",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "b5bc85",
+        "hash": "82c8ca80",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "b5bc85",
+        "hash": "592e621a",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "b5bc85",
+        "hash": "8b5d9ee4",
+        "encoded": "%22id%22:%20%22f5%22,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "b5bc85",
+        "hash": "14d4e83e",
+        "encoded": "%22providerId%22:%20%22pr1%22,",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "b5bc85",
+        "hash": "311fc250",
+        "encoded": "%22name%22:%20%22FP%20Sustainable%20Balanced%22,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "b5bc85",
+        "hash": "210a3fec",
+        "encoded": "%22category%22:%20%22Mixed%20Assets%22,",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "b5bc85",
+        "hash": "4f9693b6",
+        "encoded": "%22riskLevel%22:%20%22Medium%22,",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "b5bc85",
+        "hash": "e67539d5",
+        "encoded": "%22expenseRatio%22:%200.15,",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "b5bc85",
+        "hash": "f0295906",
+        "encoded": "%22isin%22:%20%22GB00FPSB0005%22,",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "b5bc85",
+        "hash": "c459c468",
+        "encoded": "%22currency%22:%20%22GBP%22,",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "b5bc85",
+        "hash": "44a0ac40",
+        "encoded": "%22isDefault%22:%20false",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "b5bc85",
+        "hash": "2ef1d392",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "b5bc85",
+        "hash": "ad13aae1",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

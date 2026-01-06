@@ -1,0 +1,14 @@
+[
+  {
+    "id": "pr1",
+    "name": "FuturePension Plc",
+    "website": "https://futurepension.example",
+    "contact": { "phone": "+44 20 7000 0001", "email": "support@futurepension.example" }
+  },
+  {
+    "id": "pr2",
+    "name": "Secure Life",
+    "website": "https://securelife.example",
+    "contact": { "phone": "+44 20 8000 0002", "email": "help@securelife.example" }
+  }
+]

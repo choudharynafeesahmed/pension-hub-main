@@ -1,0 +1,13 @@
+[
+  { "id": "h1", "accountId": "acc1", "fundId": "f1", "units": 100.0, "price": 200.0, "value": 20000.0, "asOf": "2025-01-03" },
+  { "id": "h2", "accountId": "acc1", "fundId": "f2", "units": 300.0, "price": 100.78, "value": 30234.0, "asOf": "2025-01-03" },
+
+  { "id": "h3", "accountId": "acc2", "fundId": "f3", "units": 50.0, "price": 300.0, "value": 15000.0, "asOf": "2025-01-03" },
+  { "id": "h4", "accountId": "acc2", "fundId": "f4", "units": 80.0, "price": 100.0, "value": 8000.0, "asOf": "2025-01-03" },
+
+  { "id": "h5", "accountId": "acc3", "fundId": "f1", "units": 60.0, "price": 200.0, "value": 12000.0, "asOf": "2025-01-03" },
+  { "id": "h6", "accountId": "acc3", "fundId": "f2", "units": 110.0, "price": 100.78, "value": 11085.8, "asOf": "2025-01-03" },
+
+  { "id": "h7", "accountId": "acc4", "fundId": "f3", "units": 70.0, "price": 300.0, "value": 21000.0, "asOf": "2025-01-03" },
+  { "id": "h8", "accountId": "acc4", "fundId": "f5", "units": 70.0, "price": 150.0, "value": 10500.0, "asOf": "2025-01-03" }
+]

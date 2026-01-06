@@ -1,0 +1,15 @@
+[
+  { "id": "t1", "accountId": "acc1", "type": "Contribution", "date": "2024-12-30", "amount": 500.0, "description": "Employee+Employer contribution" },
+  { "id": "t2", "accountId": "acc1", "type": "Management Fee", "date": "2024-12-31", "amount": -7.84, "description": "Monthly fund fee" },
+  { "id": "t3", "accountId": "acc1", "type": "Dividend", "date": "2024-12-20", "amount": 38.2, "description": "Fund distribution" },
+
+  { "id": "t4", "accountId": "acc2", "type": "Contribution", "date": "2024-12-30", "amount": 400.0, "description": "Employee+Employer contribution" },
+  { "id": "t5", "accountId": "acc2", "type": "Switch", "date": "2024-11-15", "amount": 0.0, "description": "Rebalanced f3->f4 10%" },
+
+  { "id": "t6", "accountId": "acc3", "type": "Contribution", "date": "2024-12-29", "amount": 300.0, "description": "Employee+Employer contribution" },
+  { "id": "t7", "accountId": "acc3", "type": "Management Fee", "date": "2024-12-31", "amount": -5.12, "description": "Monthly fund fee" },
+
+  { "id": "t8", "accountId": "acc4", "type": "Contribution", "date": "2024-12-30", "amount": 360.0, "description": "Employee+Employer contribution" },
+  { "id": "t9", "accountId": "acc4", "type": "Dividend", "date": "2024-12-18", "amount": 25.9, "description": "Fund distribution" },
+  { "id": "t10", "accountId": "acc4", "type": "Management Fee", "date": "2024-12-31", "amount": -6.44, "description": "Monthly fund fee" }
+]

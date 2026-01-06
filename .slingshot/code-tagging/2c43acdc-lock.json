@@ -1,0 +1,109 @@
+{
+  "public\\data\\dataset-manifest.json": {
+    "filename": "dataset-manifest.json",
+    "path": "public\\data\\dataset-manifest.json",
+    "version": "1.1",
+    "chunks": {
+      "4f5537": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767696509,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "9c6ea7db",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "4f5537",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "4f5537",
+        "hash": "9da0fc7d",
+        "encoded": "%22name%22:%20%22pension-hub-main%20mock%20dataset%22,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "4f5537",
+        "hash": "bde4980f",
+        "encoded": "%22version%22:%20%221.0.0%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "4f5537",
+        "hash": "b058d1b2",
+        "encoded": "%22generatedAt%22:%20%222025-01-06T00:00:00Z%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "4f5537",
+        "hash": "1c32be1d",
+        "encoded": "%22files%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "4f5537",
+        "hash": "6a50e752",
+        "encoded": "%22users%22:%20%22public/data/users.json%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "4f5537",
+        "hash": "4f8513ba",
+        "encoded": "%22providers%22:%20%22public/data/providers.json%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "4f5537",
+        "hash": "ffb80351",
+        "encoded": "%22accounts%22:%20%22public/data/accounts.json%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "4f5537",
+        "hash": "2dbf52e4",
+        "encoded": "%22funds%22:%20%22public/data/funds.json%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "4f5537",
+        "hash": "a3f8abbe",
+        "encoded": "%22holdings%22:%20%22public/data/holdings.json%22,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "4f5537",
+        "hash": "c7a34876",
+        "encoded": "%22contributions%22:%20%22public/data/contributions.json%22,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "4f5537",
+        "hash": "9a551f5d",
+        "encoded": "%22transactions%22:%20%22public/data/transactions.json%22",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "4f5537",
+        "hash": "6a3f2143",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "4f5537",
+        "hash": "e683dcf7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
