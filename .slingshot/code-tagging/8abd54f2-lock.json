@@ -1,0 +1,241 @@
+{
+  "src\\components\\ui\\UserSelect.jsx": {
+    "filename": "UserSelect.jsx",
+    "path": "src\\components\\ui\\UserSelect.jsx",
+    "version": "1.1",
+    "chunks": {
+      "f61bab": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767701787,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "2402adff",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "f61bab",
+        "hash": "d4f2d3d0",
+        "encoded": "import%20React%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "f61bab",
+        "hash": "de3a3b47",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "f61bab",
+        "hash": "6b553fff",
+        "encoded": "*%20Accessible%20user%20selection%20dropdown.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "f61bab",
+        "hash": "d3f97064",
+        "encoded": "*%20Props:",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "f61bab",
+        "hash": "917d8234",
+        "encoded": "*%20%20-%20users:%20%5B%7B%20id,%20fullName%20%7D%5D",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "f61bab",
+        "hash": "1bc21296",
+        "encoded": "*%20%20-%20value:%20string%20(%22%22,%20or%20userId)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "f61bab",
+        "hash": "4da7c2d9",
+        "encoded": "*%20%20-%20onChange:%20(userId:%20string)%20=%3E%20void",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "f61bab",
+        "hash": "11d7e9e0",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "f61bab",
+        "hash": "b4d66755",
+        "encoded": "export%20default%20function%20UserSelect(%7B%20users,%20value,%20onChange%20%7D)%20%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "f61bab",
+        "hash": "5a7a7728",
+        "encoded": "const%20handleChange%20=%20(e)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "f61bab",
+        "hash": "03a2321b",
+        "encoded": "const%20next%20=%20String(e?.target?.value%20??%20%22%22);",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "f61bab",
+        "hash": "e2c2b33c",
+        "encoded": "onChange(next);",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "f61bab",
+        "hash": "67a86cab",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "f61bab",
+        "hash": "cc2a6fcd",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "f61bab",
+        "hash": "4c12007f",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "f61bab",
+        "hash": "f43fa3f8",
+        "encoded": "%3Clabel%20htmlFor=%22user-select%22%20id=%22user-select-label%22%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "f61bab",
+        "hash": "b2af00a5",
+        "encoded": "User",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "f61bab",
+        "hash": "fa8c5d8a",
+        "encoded": "%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "f61bab",
+        "hash": "681b44ed",
+        "encoded": "%3Cselect",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "f61bab",
+        "hash": "8b2445e4",
+        "encoded": "id=%22user-select%22",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "f61bab",
+        "hash": "5e19a3fd",
+        "encoded": "name=%22user%22",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "f61bab",
+        "hash": "ceb00345",
+        "encoded": "aria-labelledby=%22user-select-label%22",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "f61bab",
+        "hash": "605621a7",
+        "encoded": "value=%7Bvalue%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "f61bab",
+        "hash": "40e4ed59",
+        "encoded": "onChange=%7BhandleChange%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "f61bab",
+        "hash": "425d6543",
+        "encoded": "title=%22Filter%20accounts%20by%20user%22",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "f61bab",
+        "hash": "362f26dd",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "f61bab",
+        "hash": "a31159ab",
+        "encoded": "%3Coption%20value=%22%22%3EAll%20users%3C/option%3E",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "f61bab",
+        "hash": "a3558c67",
+        "encoded": "%7Busers.map((u)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "f61bab",
+        "hash": "0aed0388",
+        "encoded": "%3Coption%20key=%7Bu.id%7D%20value=%7Bu.id%7D%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "f61bab",
+        "hash": "07c6c1c7",
+        "encoded": "%7Bu.fullName%7D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "f61bab",
+        "hash": "ddc99757",
+        "encoded": "%3C/option%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "f61bab",
+        "hash": "88dd20e8",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "f61bab",
+        "hash": "4da32804",
+        "encoded": "%3C/select%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "f61bab",
+        "hash": "4988e367",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "f61bab",
+        "hash": "f2c6d78f",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "f61bab",
+        "hash": "880eeeff",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

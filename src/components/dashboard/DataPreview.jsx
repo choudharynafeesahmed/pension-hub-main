@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import { usePensionData } from "../../hooks/usePensionData";
+import CustomerSwitcher from "../ui/CustomerSwitcher";
 
 export default function DataPreview() {
   const { data, loading, error } = usePensionData({
@@ -7,6 +8,14 @@ export default function DataPreview() {
     retries: 2,
     timeoutMs: 8_000
   });
+
+  const [selectedUserId, setSelectedUserId] = useState("");
+
+  const filteredSummaries = useMemo(() => {
+    if (!data) return [];
+    if (!selectedUserId) return data.accountSummaries;
+    return data.accountSummaries.filter((a) => a.userId === selectedUserId);
+  }, [data, selectedUserId]);
 
   if (loading) {
     return (
@@ -16,7 +25,6 @@ export default function DataPreview() {
     );
   }
   if (error) {
-    // Safe message for users, details in console from dataClient
     return (
       <div role="alert" aria-live="assertive">
         Could not load dataset. Please try again.
@@ -27,8 +35,12 @@ export default function DataPreview() {
 
   return (
     <section aria-labelledby="dataset-summary">
+      {/* Top-left customer switcher */}
+      <CustomerSwitcher users={data.users} value={selectedUserId} onChange={setSelectedUserId} />
+
       <h2 id="dataset-summary">Dataset summary</h2>
-      <ul>
+
+      <ul aria-label="Overall dataset counts">
         <li>Users: {data.users.length}</li>
         <li>Providers: {data.providers.length}</li>
         <li>Accounts: {data.accounts.length}</li>
@@ -39,6 +51,11 @@ export default function DataPreview() {
       </ul>
 
       <h3>Accounts</h3>
+      <p aria-live="polite">
+        Showing {filteredSummaries.length} of {data.accountSummaries.length} accounts
+        {selectedUserId ? ` for ${data.usersById[selectedUserId]?.fullName || selectedUserId}` : ""}.
+      </p>
+
       <div style={{ overflowX: "auto" }}>
         <table aria-label="Accounts overview">
           <thead>
@@ -55,7 +72,7 @@ export default function DataPreview() {
             </tr>
           </thead>
           <tbody>
-            {data.accountSummaries.map((a) => (
+            {filteredSummaries.map((a) => (
               <tr key={a.id}>
                 <td>{a.accountNumber}</td>
                 <td>{a.userName}</td>

@@ -1,0 +1,319 @@
+{
+  "src\\components\\ui\\CustomerSwitcher.jsx": {
+    "filename": "CustomerSwitcher.jsx",
+    "path": "src\\components\\ui\\CustomerSwitcher.jsx",
+    "version": "1.1",
+    "chunks": {
+      "81ca16": {
+        "user": "Choudhary Nafees Ahmed",
+        "model": "gpt-5",
+        "timestamp": 1767702435,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "chat",
+        "type": "createFileWithCode",
+        "hash": "479bd666",
+        "messageId": "9fc2b484-2220-4c19-9bc3-64c0dbb892ed",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "81ca16",
+        "hash": "d4f2d3d0",
+        "encoded": "import%20React%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "81ca16",
+        "hash": "de3a3b47",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "81ca16",
+        "hash": "1097426d",
+        "encoded": "*%20CustomerSwitcher%20-%20fixed%20top-left%20dropdown%20to%20select%20a%20customer%20(user).",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "81ca16",
+        "hash": "d3f97064",
+        "encoded": "*%20Props:",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "81ca16",
+        "hash": "d201a13c",
+        "encoded": "*%20%20-%20users:%20Array%3C%7B%20id:%20string,%20fullName:%20string%20%7D%3E",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "81ca16",
+        "hash": "9b49efbe",
+        "encoded": "*%20%20-%20value:%20string%20(selected%20userId%20or%20%22%22)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "81ca16",
+        "hash": "4da7c2d9",
+        "encoded": "*%20%20-%20onChange:%20(userId:%20string)%20=%3E%20void",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "81ca16",
+        "hash": "11d7e9e0",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "81ca16",
+        "hash": "cfff1c19",
+        "encoded": "export%20default%20function%20CustomerSwitcher(%7B%20users%20=%20%5B%5D,%20value%20=%20%22%22,%20onChange%20%7D)%20%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "81ca16",
+        "hash": "5a7a7728",
+        "encoded": "const%20handleChange%20=%20(e)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "81ca16",
+        "hash": "03a2321b",
+        "encoded": "const%20next%20=%20String(e?.target?.value%20??%20%22%22);",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "81ca16",
+        "hash": "b17d56ca",
+        "encoded": "onChange?.(next);",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "81ca16",
+        "hash": "67a86cab",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "81ca16",
+        "hash": "a39990e2",
+        "encoded": "//%20Inline%20styles%20keep%20this%20independent%20of%20app%20CSS.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "81ca16",
+        "hash": "35ef6129",
+        "encoded": "const%20containerStyle%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "81ca16",
+        "hash": "8ee562f6",
+        "encoded": "position:%20%22fixed%22,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "81ca16",
+        "hash": "b33c92e0",
+        "encoded": "top:%208,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "81ca16",
+        "hash": "ac1ca56e",
+        "encoded": "left:%208,",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "81ca16",
+        "hash": "4707e966",
+        "encoded": "zIndex:%201000,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "81ca16",
+        "hash": "6c1464ae",
+        "encoded": "background:%20%22#ffffff%22,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "81ca16",
+        "hash": "6d485879",
+        "encoded": "border:%20%221px%20solid%20#d0d7de%22,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "81ca16",
+        "hash": "ac5d2596",
+        "encoded": "borderRadius:%206,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "81ca16",
+        "hash": "9f644856",
+        "encoded": "padding:%20%228px%2010px%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "81ca16",
+        "hash": "bfccf793",
+        "encoded": "boxShadow:%20%220%202px%208px%20rgba(0,0,0,0.08)%22",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "81ca16",
+        "hash": "3a997202",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "81ca16",
+        "hash": "0aa4530d",
+        "encoded": "const%20labelId%20=%20%22customer-switcher-label%22;",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "81ca16",
+        "hash": "e84d3cad",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "81ca16",
+        "hash": "884e94bf",
+        "encoded": "%3Cdiv%20style=%7BcontainerStyle%7D%3E",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "81ca16",
+        "hash": "0e5278aa",
+        "encoded": "%3Clabel%20id=%7BlabelId%7D%20htmlFor=%22customer-switcher%22%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "81ca16",
+        "hash": "5a805594",
+        "encoded": "Customer",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "81ca16",
+        "hash": "988755cb",
+        "encoded": "%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "81ca16",
+        "hash": "c1a59f94",
+        "encoded": "%3Cselect",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "81ca16",
+        "hash": "1099e89a",
+        "encoded": "id=%22customer-switcher%22",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "81ca16",
+        "hash": "679c20a2",
+        "encoded": "name=%22customer%22",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "81ca16",
+        "hash": "6bf47a72",
+        "encoded": "aria-labelledby=%7BlabelId%7D",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "81ca16",
+        "hash": "a88f91fb",
+        "encoded": "value=%7Bvalue%7D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "81ca16",
+        "hash": "419c6dd2",
+        "encoded": "onChange=%7BhandleChange%7D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "81ca16",
+        "hash": "3011d09e",
+        "encoded": "title=%22Filter%20accounts%20by%20customer%22",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "81ca16",
+        "hash": "86e0098a",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "81ca16",
+        "hash": "0108e440",
+        "encoded": "%3Coption%20value=%22%22%3EAll%20customers%3C/option%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "81ca16",
+        "hash": "f3e84bad",
+        "encoded": "%7Busers.map((u)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "81ca16",
+        "hash": "359af9c5",
+        "encoded": "%3Coption%20key=%7Bu.id%7D%20value=%7Bu.id%7D%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "81ca16",
+        "hash": "80283e6c",
+        "encoded": "%7Bu.fullName%7D",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "81ca16",
+        "hash": "3f5c11dd",
+        "encoded": "%3C/option%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "81ca16",
+        "hash": "256da4c1",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "81ca16",
+        "hash": "7a954460",
+        "encoded": "%3C/select%3E",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "81ca16",
+        "hash": "0915f7af",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "81ca16",
+        "hash": "460a75d9",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "81ca16",
+        "hash": "88fadba2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
